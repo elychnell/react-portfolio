@@ -1,10 +1,17 @@
 import ContactForm from './ContactForm'
+import SocialLinks from './SocialLinks'
 
 function Contact() {
   return (
-    <div>Contact
-        <ContactForm />
-    </div>
+    <section className="bg-[#ECF39E] flex flex-row gap-4 text-white py-20 px-4">
+      <div className="flex-shrink-0">
+      <h6 className="text-sm font-semibold text-primary">KONTAKT</h6>
+      <SocialLinks type="email" />
+      <SocialLinks type="github" />
+      <SocialLinks type="linkedin" />
+      </div>
+      <ContactForm />
+    </section>
   )
 }
 

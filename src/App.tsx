@@ -2,10 +2,12 @@ import './App.css'
 import { useState } from 'react'
 
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
-import Contact from './components/ContactForm'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
+
 
 function App() {
 
@@ -21,8 +23,9 @@ function App() {
   const [formData, setFormData] = useState(initialFormData)
 
   return (
-    <div className="bg-[#ECF39E] text-white">
+    <div className="">
     <Navbar />
+    <Hero />
     <About />
     <Projects />
     <Contact />
