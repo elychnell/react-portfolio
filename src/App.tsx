@@ -7,6 +7,7 @@ import About from './components/About/About'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Ghost from './components/Ghost/Ghost'
 
 
 function App() {
@@ -23,14 +24,15 @@ function App() {
   const [formData, setFormData] = useState(initialFormData)
 
   return (
-    <div className="">
+    <>
+    <Ghost />
     <Navbar />
     <Hero />
     <About />
     <Projects />
     <Contact />
     <Footer />
-    </div>
+    </>
   )
 }
 
