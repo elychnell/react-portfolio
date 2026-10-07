@@ -1,5 +1,5 @@
 import ContactForm from './ContactForm'
-import SocialLinks from './SocialLinks'
+import SocialLinks from '../SocialLinks'
 
 function Contact() {
   return (

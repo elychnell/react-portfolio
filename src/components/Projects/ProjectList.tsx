@@ -1,7 +1,9 @@
+import ProjectCard from "./ProjectCard"
+
 function ProjectList() {
   return (
     <ul>
-        <li>Projekt 1 EXAMPLE</li>
+        <li><ProjectCard /></li>
     </ul>
   )
 }

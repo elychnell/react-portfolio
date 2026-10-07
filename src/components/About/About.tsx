@@ -1,4 +1,4 @@
-import CatBubble from "./CatBubble"
+import CatBubble from "../CatBubble"
 
 function About() {
   return (
