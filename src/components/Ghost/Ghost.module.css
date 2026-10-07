@@ -1,82 +1,87 @@
+/* 
+  --color-primary: #4F772D;
+  --color-dark: #132A13;
+  --color-light: #90A955;
+  --color-lighter: #31572C;
+  --color-highlight: #ECF39E;
+*/
+
 .ghostAside {
-  /* hela ghostens position/animation */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 40%;
 }
 
+/* GHOST ELEMENT */
 .ghostContent {
   /* layout för text + ikon */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 400px;
+    height: 200px;
 }
 
 .ghostText {
-  /* textblocket */
+  color: var(--color-primary);
 }
 
 .line1 {
-  /* första raden */
+position: relative;
+top: 5px;
+font-size: 1.5rem;
 }
 
 .line2 {
-  /* andra raden */
+    position: relative;
+    left: 2px;
+ font-size: 1.25rem;
 }
 
 .date {
-  /* datumet */
+position: relative;
+left: 6px;
+font-size: 1rem;
+color: var(--color-light);
 }
 
+/* GHOST ICON */
 .ghostIcon {
-  /* Hela svg-ikonen */
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
 }
 
+/* GHOST ICON COLORS */
 .background {
-/* bakgrundsfärg */
-
+fill: transparent;
 }
 
 .outline {
-/* kontur */
-
+fill: var(--color-primary)
 }
 
 .ghostBackground {
-/* bakgrund för själva spöket */
-
+fill: var(--color-light)
 }
 
 .middleHighlight {
-/* highlight i mitten av spöket */
-
+fill: var(--color-lighter)
 }
 
 .restHighlight {
-/* resten av highlight spöket */
-
+fill: var(--color-lighter)
 }
-.leftHighlight {
-/* highlight på vänster sida av spöket */
 
+.leftHighlight {
+fill: var(--color-lighter)
 }
 .mouth {
-/* munnen */
+fill: var(--color-primary)
 
 }
 .leftEye {
-/* vänster öga */
-
+fill: var(--color-primary)
 }
 .rightEye {
-/* höger öga */
-
+fill: var(--color-primary)
 }

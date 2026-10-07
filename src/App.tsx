@@ -20,7 +20,6 @@ function App() {
     message: "",
   }
 
-  const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [formData, setFormData] = useState(initialFormData)
 
   return (
