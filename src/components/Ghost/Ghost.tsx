@@ -4,12 +4,12 @@ import GhostIcon from "./GhostIcon";
 function Ghost() {
   return (
 
-    <aside className={styles.ghost}>
-      <div className="ghostContent">
-        <div className="ghostText">
-          <h3 className="line1">Nothing to fear</h3>
-          <h3 className="line2">Nothing to doubt</h3>
-          <h4 className="date">2025-06-08</h4>
+    <aside className={styles.ghostAside}>
+      <div className={styles.ghostContent}>
+        <div className={styles.ghostText}>
+          <h3 className={styles.line1}>Nothing to fear</h3>
+          <h3 className={styles.line2}>Nothing to doubt</h3>
+          <h4 className={styles.date}>2025-06-08</h4>
         </div>
       <GhostIcon />
       </div>

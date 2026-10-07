@@ -1,0 +1,82 @@
+.ghostAside {
+  /* hela ghostens position/animation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ghostContent {
+  /* layout för text + ikon */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ghostText {
+  /* textblocket */
+}
+
+.line1 {
+  /* första raden */
+}
+
+.line2 {
+  /* andra raden */
+}
+
+.date {
+  /* datumet */
+}
+
+.ghostIcon {
+  /* Hela svg-ikonen */
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+/* bakgrundsfärg */
+
+}
+
+.outline {
+/* kontur */
+
+}
+
+.ghostBackground {
+/* bakgrund för själva spöket */
+
+}
+
+.middleHighlight {
+/* highlight i mitten av spöket */
+
+}
+
+.restHighlight {
+/* resten av highlight spöket */
+
+}
+.leftHighlight {
+/* highlight på vänster sida av spöket */
+
+}
+.mouth {
+/* munnen */
+
+}
+.leftEye {
+/* vänster öga */
+
+}
+.rightEye {
+/* höger öga */
+
+}

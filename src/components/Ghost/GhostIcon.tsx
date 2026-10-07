@@ -1,10 +1,10 @@
-import React from 'react'
+import styles from "./Ghost.module.css";
 
 function GhostIcon() {
   return (
     <svg
           version="1.1"
-          className="ghostIcon"
+          className={styles.ghostIcon}
           id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -17,7 +17,7 @@ function GhostIcon() {
           aria-label="A ghost icon"
         >
           <path
-            className="background"
+            className={styles.background}
             opacity="1.000000"
             stroke="none"
             d="
@@ -46,7 +46,7 @@ M0.999997,355.000000
 z"
           />
           <path
-            className="background"
+            className={styles.background}
             opacity="1.000000"
             stroke="none"
             d="
@@ -76,7 +76,7 @@ M513.000000,408.000000
 z"
           />
           <path
-            className="outline"
+            className={styles.outline}
             fill="#43220C"
             opacity="1.000000"
             stroke="none"
@@ -155,7 +155,7 @@ M298.698669,428.780945
 z"
           />
           <path
-            className="ghostBackground"
+            className={styles.ghostBackground}
             fill="#F2F2F2"
             opacity="1.000000"
             stroke="none"
@@ -225,7 +225,7 @@ M312.882050,196.340927
 z"
           />
           <path
-            className="middleHighlight"
+            className={styles.middleHighlight}
             opacity="1.000000"
             stroke="none"
             d="
@@ -239,7 +239,7 @@ M219.341766,412.823822
 z"
           />
           <path
-            className="restHighlight"
+            className={styles.restHighlight}
             opacity="1.000000"
             stroke="none"
             d="
@@ -253,7 +253,7 @@ M342.333557,412.850403
 z"
           />
           <path
-            className="restHighlight"
+            className={styles.restHighlight}
             opacity="1.000000"
             stroke="none"
             d="
@@ -266,7 +266,7 @@ M82.243149,401.260651
 z"
           />
           <path
-            className="leftHighlight"
+            className={styles.leftHighlight}
             opacity="1.000000"
             stroke="none"
             d="
@@ -280,7 +280,7 @@ M25.980103,348.833496
 z"
           />
           <path
-            className="restHighlight"
+            className={styles.restHighlight}
             opacity="1.000000"
             stroke="none"
             d="
@@ -293,7 +293,7 @@ M453.285034,410.928833
 z"
           />
           <path
-            className="mouth"
+            className={styles.mouth}
             opacity="1.000000"
             stroke="none"
             d="
@@ -309,7 +309,7 @@ M237.955338,335.064331
 z"
           />
           <path
-            className="leftEye"
+            className={styles.leftEye}
             opacity="1.000000"
             stroke="none"
             d="
@@ -326,7 +326,7 @@ M205.138977,164.124893
 z"
           />
           <path
-            className="rightEye"
+            className={styles.rightEye}
             opacity="1.000000"
             stroke="none"
             d="
