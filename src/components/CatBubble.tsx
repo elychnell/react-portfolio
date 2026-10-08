@@ -4,7 +4,7 @@ interface CatBubbleProps {
 
 function CatBubble({ name }: CatBubbleProps) {
   return (
-    <span className="rounded-full border border-[#151824]/12 px-4 py-2 text-sm font-medium">{name}</span>
+    <span className="rounded-full border border-[#151824]/12 px-3 py-1 text-sm font-medium bg-white">{name}</span>
   )
 }
 

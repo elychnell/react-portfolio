@@ -5,9 +5,6 @@ interface SocialLinksProps {
   location: 'footer' | 'contact'
 }
 
-
-
-
 function SocialLinks({ type, location }: SocialLinksProps) {
 
 const textColor = location === "contact" ? "text-primary " : "text-white"
