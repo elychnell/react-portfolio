@@ -20,7 +20,7 @@ const handleTagClick = (tag: string) => {
 }
 
   return (
-    <section className="bg-light text-dark py-20 px-4">
+    <section className="bg-light text-dark py-20 px-4" id="projects">
       <div className="container mx-auto">
         <h6 className="text-sm font-semibold text-primary">02 / UTVALDA ARBETEN</h6>
         <h1 className="text-2xl font-bold text-light">Mina projekt</h1>

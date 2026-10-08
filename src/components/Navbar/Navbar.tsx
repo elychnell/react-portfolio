@@ -9,9 +9,9 @@ function Navbar() {
     Emil Lychnell
     </div>
     <nav className="flex gap-4 text-sm font-semibold text-white">
-      <a href="/">Om mig</a>
-      <a href="/about">Projekt</a>
-      <a href="/contact">Kontakt</a>
+      <a href="#about">Om mig</a>
+      <a href="#projects">Projekt</a>
+      <a href="#contact">Kontakt</a>
     </nav>
     </header>
   )
