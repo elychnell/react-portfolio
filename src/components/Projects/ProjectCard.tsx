@@ -5,10 +5,8 @@ import CatBubble from "../CatBubble"
 function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="max-w-lg justify-self-center flex flex-col gap-5 py-4 px-6 bg-dark rounded-lg shadow-md">
+      <img src={project.image} alt={project.title} className="w-full h-90 rounded-lg border border-primary" />
       <h3 className="text-lg font-bold text-light">{project.title}</h3>
-      <div className="max-w-md overflow-hidden rounded-xl">
-      <img src={project.image} alt={project.title} className="w-full h-auto rounded-lg" />
-      </div>
       <p className="text-primary">{project.description}</p>
       <div className="mx-4 flex flex-row gap-2 max-w-md flex-wrap">
         {project.tags.map(tag => (

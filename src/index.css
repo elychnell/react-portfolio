@@ -6,8 +6,11 @@
   --color-light: #90A955;
   --color-lighter: #31572C;
   --color-highlight: #ECF39E;
+
+  --font-manrope: "Manrope", sans-serif;
 }
 
 body {
   margin: 0;
+  font-family: var(--font-manrope);
 }
