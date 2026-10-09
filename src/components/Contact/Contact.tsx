@@ -1,7 +1,8 @@
 import ContactForm from './ContactForm'
 import SocialLinks from '../SocialLinks'
+import type { FormData } from '../../types/types'
 
-function Contact() {
+function Contact(contactProps: { formData: FormData, setFormData: (formData: FormData) => void }) {
   return (
     <section className="bg-[#ECF39E] flex flex-row gap-4 text-white py-20 px-4" id="contact">
       <div className="flex-shrink-0">
@@ -10,7 +11,7 @@ function Contact() {
       <SocialLinks type="github" location="contact" />
       <SocialLinks type="linkedin" location="contact" />
       </div>
-      <ContactForm />
+      <ContactForm formData={contactProps.formData} setFormData={contactProps.setFormData} />
     </section>
   )
 }

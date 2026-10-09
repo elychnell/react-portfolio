@@ -35,7 +35,7 @@ export const projects: Project[] = [
     tags: ["TypeScript", "WebSockets", "Node.js", "Express", "PostgreSQL"],
     image: 'src/assets/img/project3.jpg',
     repoUrl: 'https://github.com/elychnell/keyboard-warrior',
-    liveUrl: 'https://elychnell.github.io/keyboard-warrior/'
+    liveUrl: ''
   },
   {
   id: 5,
@@ -52,7 +52,7 @@ export const projects: Project[] = [
   tags: ["React", "TypeScript", "Tailwind", "Vite"],
   image: 'src/assets/img/project4.jpg',
   repoUrl: 'https://github.com/elychnell/react-portfolio',
-  liveUrl: '...' 
+  liveUrl: 'Vervel (WIP)' 
   }
   
 ]
