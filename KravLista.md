@@ -4,59 +4,59 @@
 
 ### 1. Planering
 
-- [X] Gör en Figma-skiss av sidan, för både mobil och desktop, innan ni kodar.
-- [ ] Den färdiga sidan ska följa skissen.
+- [x] Gör en Figma-skiss av sidan, för både mobil och desktop, innan ni kodar.
+- [x] Den färdiga sidan ska följa skissen.
 - [ ] Ändringar under arbetets gång är okej, men beskriv dem i `README.md`.
 
 ### 2. Struktur och komponenter
 
-- [ ] Dela upp appen i rimliga, återanvändbara komponenter med en tydlig struktur.
-- [] Använd props för att skicka data.
-- [X] Spara projektdatan separat, t.ex. `data/projects.ts`.
-- [ ] Rendera projektdatan med `.map()` och korrekta `key`.
-- [ ] Minst 6 projekt visas som boxar/kort.
+- [x] Dela upp appen i rimliga, återanvändbara komponenter med en tydlig struktur.
+- [x] Använd props för att skicka data.
+- [x] Spara projektdatan separat, t.ex. `data/projects.ts`.
+- [x] Rendera projektdatan med `.map()` och korrekta `key`.
+- [x] Minst 6 projekt visas som boxar/kort.
 
 ### 3. Innehåll
 
-- [ ] Portfolion innehåller minst sektionerna:
-  - [ ] Hem
-  - [ ] Om mig
-  - [ ] Projekt
-  - [ ] Kontakt
-- [ ] En navigation som länkar till sektionerna, t.ex. `#projekt`.
-- [ ] Kontaktsektionen visar kontaktuppgifter, t.ex.:
-  - [ ] E-post
-  - [ ] GitHub
-  - [ ] LinkedIn
+- [x] Portfolion innehåller minst sektionerna:
+  - [x] Hem
+  - [x] Om mig
+  - [x] Projekt
+  - [x] Kontakt
+- [x] En navigation som länkar till sektionerna, t.ex. `#projekt`.
+- [x] Kontaktsektionen visar kontaktuppgifter:
+  - [x] E-post
+  - [x] GitHub
+  - [x] LinkedIn
 - [ ] Kontaktformuläret är ett VG-krav.
 
 ### 4. State och interaktivitet
 
-- [ ] Minst två meningsfulla användningar av `useState`, varav en ska filtrera projektlistan.
-- [ ] Filtret väljer en teknik-tagg i taget, plus ett val som visar alla projekt, t.ex. "Alla".
+- [x] Minst två meningsfulla användningar av `useState`, varav en ska filtrera projektlistan.
+- [x] Filtret väljer en teknik-tagg i taget, plus ett val som visar alla projekt, t.ex. "Alla".
 - [ ] Andra exempel på meningsfull state:
   - [ ] Mobilmeny
   - [ ] Ljust/mörkt tema
   - [ ] Expanderbar "Läs mer"
-- [ ] Den filtrerade listan ska räknas fram vid rendering, inte sparas i ett eget state.
+- [x] Den filtrerade listan ska räknas fram vid rendering, inte sparas i ett eget state.
 
 ### 5. Styling och animation
 
-- [ ] En enhetlig visuell profil med färger, typografi och avstånd.
-- [ ] Använd CSS Modules, Tailwind eller välstrukturerad CSS.
+- [x] En enhetlig visuell profil med färger, typografi och avstånd.
+- [x] Använd CSS Modules, Tailwind eller välstrukturerad CSS.
 - [ ] Helt responsiv från ca 360px upp till desktop-bredd.
-- [ ] Minst en animation eller transition som förbättrar upplevelsen.
-- [ ] Animationen kan göras med CSS eller Motion.
+- [x] Minst en animation eller transition som förbättrar upplevelsen.
+- [x] Animationen kan göras med CSS eller Motion.
 
 ### 6. Kvalitet och leverans
 
 - [ ] Inga fel eller React-varningar i konsolen.
 - [ ] Driftsatt på Vercel.
 - [ ] `README.md` innehåller:
-  - [ ] Projektbeskrivning och tech stack
-  - [ ] Hur man kör projektet lokalt
+  - [x] Projektbeskrivning och tech stack
+  - [x] Hur man kör projektet lokalt
   - [ ] Länk till live-sidan
-  - [ ] Länk till Figma-skissen
+  - [x] Länk till Figma-skissen
 
 
 ## Uppgiftskrav på VG-nivå
@@ -93,7 +93,7 @@
 
 ### 8. Genomtänkt state-design
 
-- [ ] State ligger i den närmaste gemensamma föräldern till de komponenter som använder det.
+- [x] State ligger i den närmaste gemensamma föräldern till de komponenter som använder det.
 
 #### Multi-select-filter
 
@@ -101,7 +101,8 @@
 - [x] De valda taggarna sparas som en array i state.
 - [x] Taggar läggs till genom att skapa en ny array.
 - [x] Taggar tas bort genom att skapa en ny array med `.filter()`.
-- [ ] Om inga taggar är valda visas alla projekt, och det finns en knapp för att rensa filtret.
+- [x] Om inga taggar är valda visas alla projekt.
+- [x] Det finns en knapp för att rensa filtret.
 - [x] Ni väljer själva om ett projekt ska matcha någon eller alla valda taggar.
 - [x] Multi-select-filtret ersätter filtret på G-nivå.
 
@@ -138,9 +139,9 @@ Reflektionen ska bland annat ta upp:
 
 - [ ] All funktionalitet fungerar utan fel.
 - [ ] Inga React-varningar eller fel i konsolen.
-- [ ] Komponenten är uppdelad på ett tydligt och återanvändbart sätt.
-- [ ] Props används där det är lämpligt.
-- [ ] State ligger på rätt nivå i komponentträdet.
+- [x] Komponenten är uppdelad på ett tydligt och återanvändbart sätt.
+- [x] Props används där det är lämpligt.
+- [x] State ligger på rätt nivå i komponentträdet.
 - [ ] Kod och filstruktur är lätt att förstå och underhålla.
 - [ ] Projektet fungerar på både mobil och desktop.
 - [ ] Projektet är driftsatt på Vercel.

@@ -28,7 +28,7 @@ function App() {
     <Hero />
     <About />
     <Projects />
-    <Contact />
+    <Contact formData={formData} setFormData={setFormData} />
     <Footer />
   </main>
     </>

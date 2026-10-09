@@ -15,8 +15,12 @@ const filteredProjects = projects.filter(project => {
   return selectedTags.some(tag => project.tags.includes(tag))
 })
 
+const handleClear = () => {
+  setSelectedTags([])
+}
+
 const handleTagClick = (tag: string) => {
-  setSelectedTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag])
+    setSelectedTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag])
 }
 
   return (
@@ -26,14 +30,14 @@ const handleTagClick = (tag: string) => {
         <h1 className="text-2xl font-bold text-light">Mina projekt</h1>
         <p className="text-primary">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
       </div>
-      <ProjectFilter handleTagClick={handleTagClick} selectedTags={selectedTags} />
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+      <ProjectFilter handleTagClick={handleTagClick} handleClear={handleClear} selectedTags={selectedTags} />
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 max-w-[90em] mx-auto mt-4">
       {filteredProjects.map(project => (
-  <ProjectCard
-    key={project.id}
-    project={project}
-  />
-
+      <ProjectCard
+      key={project.id}
+      project={project}
+      />
+      
 ))}
       </ul>
     </section>
