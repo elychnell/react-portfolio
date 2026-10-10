@@ -5,7 +5,7 @@ import Decoration from '../Decoration'
 
 function Contact(contactProps: { formData: FormData, setFormData: (formData: FormData) => void }) {
   return (
-    <section className="bg-highlight w-full" id="contact">
+    <section className="scroll-mt-14 bg-highlight w-full min-h-[60vh]" id="contact">
       <div className="mx-auto flex max-w-[92rem] flex-row items-start justify-between py-10 sm:px-6 lg:px-8">
       <div className="flex-shrink-0">
       <h6 className="text-base font-semibold text-primary tracking-wide">03 / KONTAKT</h6>

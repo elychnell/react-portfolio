@@ -24,7 +24,7 @@ const handleTagClick = (tag: string) => {
 }
 
   return (
-    <section className="bg-light text-dark py-20 px-4 flex flex-col items-center justify-center w-full" id="projects">
+    <section className="scroll-mt-16 bg-light text-dark py-20 px-4 flex flex-col items-center justify-center w-full" id="projects">
       <div className="flex flex-row gap-[25em] items-between justify-center mb-4 flex-wrap">
         <div>
         <h6 className="text-base font-semibold text-primary tracking-wide">02 / UTVALDA ARBETEN</h6>
