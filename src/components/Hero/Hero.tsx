@@ -1,4 +1,5 @@
 import Devcard from "./Devcard"
+import Decoration from "../Decoration"
 
 function Hero() {
   return (
@@ -9,7 +10,8 @@ function Hero() {
         <h5 className="mt-3 text-2xl font-semibold text-primary">Frontend Developer</h5>
         <p className="mt-4 max-w-xl text-base leading-7 sm:text-lg sm:leading-8 text-primary">Jag studerar till frontendutvecklare och gillar att skapa snabba, tillgängliga och genomtänkta upplevelser för webben</p>
         <a href="#projects" className="mt-4 inline-block rounded-4xl bg-primary px-4 py-2 text-white hover:bg-light">Se mina projekt</a>
-        </div>
+        <Decoration type="bigthing" className="pt-25 w-155 h-auto text-primary" />
+      </div>
         <Devcard />
       </section>
   )

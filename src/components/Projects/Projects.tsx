@@ -2,6 +2,7 @@ import { useState } from "react"
 import ProjectFilter from "./ProjectFilter"
 import ProjectCard from "./ProjectCard"
 import { projects } from "../../data/projects"
+import Decoration from "../Decoration"
 
 function Projects() {
 const [selectedTags, setSelectedTags] = useState<string[]>([])
@@ -33,6 +34,7 @@ const handleTagClick = (tag: string) => {
         <p className="text-base text-primary max-w-[24em] mt-9">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
       </div>
       <ProjectFilter handleTagClick={handleTagClick} handleClear={handleClear} selectedTags={selectedTags} />
+      <Decoration type="heart" className="relative right-12.5 mt-5 mx-auto w-140 h-auto text-primary" />
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-[90em] mx-auto mt-4">
       {filteredProjects.map(project => (
       <ProjectCard
