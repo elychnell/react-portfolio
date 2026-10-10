@@ -22,7 +22,7 @@ function About() {
     </div>
     </div>
     </div>
-    <Decoration type="thing" className="relative top-15 mx-auto w-110 h-auto text-primary" />
+    <Decoration type="thing" className="relative top-15 mx-auto w-120 h-auto text-primary" />
     </section>
   )
 }
