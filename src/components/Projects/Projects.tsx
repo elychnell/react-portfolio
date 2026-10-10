@@ -34,8 +34,8 @@ const handleTagClick = (tag: string) => {
         <p className="text-base text-primary max-w-[24em] mt-9">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
       </div>
       <ProjectFilter handleTagClick={handleTagClick} handleClear={handleClear} selectedTags={selectedTags} />
-      <Decoration type="heart" className="mt-5 mx-auto w-120 h-auto text-primary" />
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-[90em] mx-auto mt-4">
+      <Decoration type="heart" className="relative top-3 mx-auto w-120 h-auto text-primary" />
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-[90em] mx-auto">
       {filteredProjects.map(project => (
       <ProjectCard
       key={project.id}

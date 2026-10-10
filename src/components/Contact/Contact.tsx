@@ -1,9 +1,8 @@
 import ContactForm from './ContactForm'
 import SocialLinks from '../SocialLinks'
-import type { FormData } from '../../types/types'
 import Decoration from '../Decoration'
 
-function Contact(contactProps: { formData: FormData, setFormData: (formData: FormData) => void }) {
+function Contact() {
   return (
     <section className="scroll-mt-14 bg-highlight w-full min-h-[60vh]" id="contact">
       <div className="mx-auto flex max-w-[92rem] flex-row items-start justify-between py-24 sm:px-6 lg:px-8">
@@ -20,7 +19,7 @@ function Contact(contactProps: { formData: FormData, setFormData: (formData: For
       </div>
       </div>
       <Decoration type="arrow" className="pt-25 w-100 h-auto text-primary" />
-      <ContactForm formData={contactProps.formData} setFormData={contactProps.setFormData} />
+      <ContactForm />
       </div>
     </section>
   )

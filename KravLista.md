@@ -28,7 +28,7 @@
   - [x] E-post
   - [x] GitHub
   - [x] LinkedIn
-- [ ] Kontaktformuläret är ett VG-krav.
+- [x] Kontaktformuläret är ett VG-krav.
 
 ### 4. State och interaktivitet
 
@@ -65,7 +65,7 @@
 
 ### 7. Kontaktformulär med kontrollerade inputs
 
-- [ ] Formulärets värden hanteras av ett state med ett objekt, t.ex.:
+- [x] Formulärets värden hanteras av ett state med ett objekt, t.ex.:
 
     ```ts
     {
@@ -85,11 +85,11 @@
   - [x] Textarea för meddelande
   - [x] Skicka-knapp
 
-- [ ] Alla fält är obligatoriska.
-- [ ] Felhantering sker via state.
-- [ ] Om ett värde saknas visas ett felmeddelande bredvid tillhörande fält.
-- [ ] När valideringen är godkänd visas ett success-meddelande om att mejlet är skickat.
-- [ ] Inget riktigt mejl behöver skickas.
+- [x] Alla fält är obligatoriska.
+- [x] Felhantering sker via state.
+- [x] Om ett värde saknas visas ett felmeddelande bredvid tillhörande fält.
+- [x] När valideringen är godkänd visas ett success-meddelande om att mejlet är skickat.
+- [x] Inget riktigt mejl behöver skickas.
 
 ### 8. Genomtänkt state-design
 
