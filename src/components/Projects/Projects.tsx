@@ -27,7 +27,7 @@ const handleTagClick = (tag: string) => {
     <section className="bg-light text-dark py-20 px-4 flex flex-col items-center justify-center w-full" id="projects">
       <div className="flex flex-row gap-[25em] items-between justify-center mb-4 flex-wrap">
         <div>
-        <h6 className="text-base font-semibold text-primary">02 / UTVALDA ARBETEN</h6>
+        <h6 className="text-base font-semibold text-primary tracking-wide">02 / UTVALDA ARBETEN</h6>
         <h1 className="text-6xl font-extrabold text-primary">Mina projekt</h1>
         </div>
         <p className="text-base text-primary max-w-[24em] mt-9">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
