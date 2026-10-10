@@ -15,11 +15,11 @@ function ProjectCard({ project }: { project: Project }) {
       </div>
       <div className="flex flex-row justify-center gap-6">
       <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="text-primary underline flex flex-row gap-1">
-      <Icon type="github" />  GitHub Repo
+      <Icon type="github" className="size-6" />  GitHub Repo
       </a>
       {project.liveUrl && (
         <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-primary underline ml-4 flex flex-row gap-1">
-         <Icon type="www" /> Live Site
+         <Icon type="www" className="size-6" /> Live Site
         </a>)}  
       </div>
     </div>

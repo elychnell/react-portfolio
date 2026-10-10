@@ -8,7 +8,7 @@ function Devcard() {
       </div>
       <div className="flex flex-1 items-center justify-center p-2">
         <div className="relative">
-          <img src="src/assets/img/Emil_Lychnell2.jpg" alt="Bild på Emil" className="rounded-lg max-w-md"/>
+          <img src="/img/Emil_Lychnell2.jpg" alt="Bild på Emil" className="rounded-lg max-w-md"/>
           <div className="absolute -bottom-3 -right-4 rounded-full border-4 border-[#fbfbfd] bg-[#151824] px-4 py-2 font-mono text-xs text-white">&lt;/&gt;</div>
           </div>
           </div>
