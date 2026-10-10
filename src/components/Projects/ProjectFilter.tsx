@@ -12,7 +12,7 @@ function ProjectFilter({ handleTagClick, handleClear, selectedTags }: FilterProp
   const isTagSelected = (tag: string) => selectedTags.includes(tag)
 
   return (
-    <div className="flex flex-row gap-1 flex-wrap my-4 mx-auto max-w-[90em] justify-center">
+    <div className="flex flex-row gap-2 flex-wrap mb-1 mt-4 mx-auto max-w-[90em] justify-center">
       {filterTags.map(tag => (
     <button
     key={tag}

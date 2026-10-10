@@ -24,14 +24,16 @@ const handleTagClick = (tag: string) => {
 }
 
   return (
-    <section className="bg-light text-dark py-20 px-4" id="projects">
-      <div className="container mx-auto">
-        <h6 className="text-sm font-semibold text-primary">02 / UTVALDA ARBETEN</h6>
+    <section className="bg-light text-dark py-20 px-4 flex flex-col items-center justify-center w-full" id="projects">
+      <div className="flex flex-row gap-[25em] items-between justify-center mb-4 flex-wrap">
+        <div>
+        <h6 className="text-base font-semibold text-primary">02 / UTVALDA ARBETEN</h6>
         <h1 className="text-6xl font-extrabold text-primary">Mina projekt</h1>
-        <p className="text-primary">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
+        </div>
+        <p className="text-base text-primary max-w-[24em] mt-9">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
       </div>
       <ProjectFilter handleTagClick={handleTagClick} handleClear={handleClear} selectedTags={selectedTags} />
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 max-w-[90em] mx-auto mt-4">
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-[90em] mx-auto mt-4">
       {filteredProjects.map(project => (
       <ProjectCard
       key={project.id}
