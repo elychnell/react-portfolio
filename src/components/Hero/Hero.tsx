@@ -2,7 +2,7 @@ import Devcard from "./Devcard"
 
 function Hero() {
   return (
-    <section className="mx-auto grid max-w-[99rem] items-stretch gap-12 lg:grid-cols-2 mt-10 px-10 py-20 rounded-lg">
+    <section className="mx-auto grid max-w-[99rem] items-stretch gap-12 lg:grid-cols-2 mt-10 px-10 py-20 rounded-lg" id="home">
       <div>
         <h6 className="text-base font-semibold text-primary tracking-wide">FRONTEND UTVECKLARE I UPPSALA</h6>
         <h1 className="text-8xl font-extrabold text-light tracking-tight">Hej, jag är <span className="text-primary">Emil.</span></h1>
