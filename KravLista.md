@@ -112,13 +112,13 @@ För VG krävs en mer avancerad animation än en enkel hover/transition.
 
 Exempel:
 
-- [ ] Stegvisa animationer när man scrollar.
-- [ ] Layout-animationer när projekten filtreras.
+- [x] Stegvisa animationer när man scrollar.
+- [x] Layout-animationer när projekten filtreras.
 - [ ] Animerad öppning och stängning av element, t.ex.:
   - [ ] Mobilmeny
   - [ ] "Läs mer"
   - [ ] Modal
-- [ ] `AnimatePresence` kan användas.
+- [x] `AnimatePresence` kan användas.
 
 ### 10. Reflektion
 

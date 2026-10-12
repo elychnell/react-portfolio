@@ -5,8 +5,8 @@ function About() {
     <section className="scroll-mt-16 py-25 bg-highlight" id="about">
     <div className="flex flex-row items-center justify-center">
     <div>
-    <h6 className="mx-4 text-base font-semibold text-primary tracking-wide">01 / OM MIG</h6>
-    <h3 className="text-6xl font-extrabold text-center mb-4 max-w-md">Nyfiken på hur bra idéer blir bra webb.</h3>
+    <p className="mx-4 text-base font-semibold text-primary tracking-wide">01 / OM MIG</p>
+    <h2 className="text-6xl font-extrabold text-center mb-4 max-w-md">Nyfiken på hur bra idéer blir bra webb.</h2>
     </div>
     <div>
     <p className="mx-20 max-w-2xl text-xl leading-8 tracking-[-0.02em] text-[#343847] sm:text-2xl sm:leading-10">Jag är frontendstudent med fokus på att bygga användarvänliga gränssnitt där form och funktion arbetar tillsammans.</p>
