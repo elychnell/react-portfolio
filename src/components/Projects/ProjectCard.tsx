@@ -1,10 +1,31 @@
 import type { Project } from "../../types/types"
 import Icon from "../Icon"
 import CatBubble from "../CatBubble"
+import { motion } from "motion/react";
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="max-w-lg justify-self-center flex flex-col gap-6 py-8 px-5 bg-dark rounded-lg shadow-md">
+    <motion.li 
+      layout
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 12 }}
+      transition={{
+      opacity: {
+      duration: 0.45,
+      ease: "easeInOut",
+      },
+      y: {
+      duration: 0.55,
+      ease: "easeOut",
+      },
+      layout: {
+      duration: 0.55,
+      ease: "easeInOut",
+      },
+      }}
+      className="list-none max-w-lg justify-self-center flex flex-col gap-6 py-8 px-5 bg-dark rounded-lg shadow-md"
+      >
       <img src={project.image} alt={project.title} className="w-full h-94 rounded-lg border border-primary" />
       <h3 className="text-2xl text-center font-bold text-light">{project.title}</h3>
       <p className="text-primary min-h-[190px]">{project.description}</p>
@@ -22,7 +43,7 @@ function ProjectCard({ project }: { project: Project }) {
          <Icon type="www" className="size-6" /> Live Site
         </a>)}  
       </div>
-    </div>
+    </motion.li>
   )
 }
 

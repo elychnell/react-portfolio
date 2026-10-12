@@ -1,5 +1,4 @@
 import CatBubble from "../CatBubble"
-import Decoration from "../Decoration"
 
 function About() {
   return (
@@ -22,7 +21,6 @@ function About() {
     </div>
     </div>
     </div>
-    <Decoration type="thing" className="relative top-15 mx-auto w-120 h-auto text-primary" />
     </section>
   )
 }
