@@ -93,15 +93,15 @@ const [xOffset, setXOffset] = useState(0);
       }}
       aria-expanded={isExpanded}
       aria-label={isExpanded ? "Minimera projekt" : "Expandera projekt"}
-      className="text-white relative bottom-5 shrink-0"
+      className="text-closeWhite relative bottom-5 shrink-0"
       >
       
       {isExpanded ? <Minimize2 /> : <Maximize2 />}
       </button>
       </div>
           
-      <h3 className={`text-white text-center font-bold text-light ${isExpanded ? "text-xl" : "text-2xl"}`}>{project.title}</h3>
-      <p className={`text-white ${isExpanded ? "text-sm" : "text-base line-clamp-4"}`}>{project.description}</p>
+      <h3 className={`text-closeWhite text-center font-bold ${isExpanded ? "text-xl" : "text-2xl"}`}>{project.title}</h3>
+      <p className={`text-whiteGreen ${isExpanded ? "text-sm" : "text-base line-clamp-4"}`}>{project.description}</p>
       <AnimatePresence initial={false}>
       {isExpanded && (
       <motion.div
@@ -112,7 +112,7 @@ const [xOffset, setXOffset] = useState(0);
       transition={{ duration: 0.4, ease: "easeInOut" }}
       className="overflow-hidden"
       >
-      {<p className="text-white text-sm">{project.longDescription}</p>}
+      {<p className="text-whiteGreen text-sm">{project.longDescription}</p>}
       </motion.div>
       )}
       </AnimatePresence>
@@ -122,11 +122,11 @@ const [xOffset, setXOffset] = useState(0);
         ))}
       </div>
       <div className="flex flex-row justify-center gap-6">
-      <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="text-white underline flex flex-row gap-1">
+      <a href={project.repoUrl} target="_blank" aria-label="Link to GitHub repository" rel="noopener noreferrer" className="text-closeWhite underline flex flex-row gap-1">
       <Icon type="github" className="size-6" />  GitHub Repo
       </a>
       {project.liveUrl && (
-        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-white underline ml-4 flex flex-row gap-1">
+        <a href={project.liveUrl} target="_blank" aria-label="Link to live site" rel="noopener noreferrer" className="text-closeWhite underline ml-4 flex flex-row gap-1">
          <Icon type="www" className="size-6" /> Live Site
         </a>)}  
       </div>

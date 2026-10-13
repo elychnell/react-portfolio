@@ -173,8 +173,8 @@ function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
     className="pointer-events-none absolute left-3 top-2 text-xs text-gray-500 transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-[:not(:placeholder-shown)]:top-2 peer-[:not(:placeholder-shown)]:text-xs">Meddelande</label>
     </div>
     {errors.message && (<p id="message-error" className="mt-1 text-sm text-red-600" role="alert">{errors.message}</p>)}
-    
-    <button type="submit" className="bg-primary text-white p-2 rounded hover:bg-highlight">Skicka</button>
+                               
+    <button type="submit" className="bg-primary text-white p-2 rounded hover:bg-light">Skicka</button>
     {isSubmitted && <p role="status" className="mt-1 text-sm text-green-700">Meddelandet har skickats!</p>}
     </form>
   )

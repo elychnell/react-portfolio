@@ -1,10 +1,11 @@
 interface CatBubbleProps {
   name: string;
+  className?: string;
 }
 
-function CatBubble({ name }: CatBubbleProps) {
+function CatBubble({ name, className }: CatBubbleProps) {
   return (
-    <span className="rounded-full border border-[#151824]/12 px-3 py-1 text-sm font-medium bg-white">{name}</span>
+  <span className={`rounded-full border px-3 py-1 text-sm font-medium ${className ?? 'border-[#151824]/12 bg-white'}`}>{name}</span>
   )
 }
 

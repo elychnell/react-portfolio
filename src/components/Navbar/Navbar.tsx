@@ -10,10 +10,26 @@ function Navbar() {
     Emil Lychnell
     </div>
     <nav className="flex gap-4 text-sm font-semibold">
-      <a href="#home" className="flex flex-row gap-2 text-white hover:text-highlight"><span className="mt-0.5">Hem </span><Icon className="size-6 relative -top-0.25" type="home"/></a>
-      <a href="#about" className="flex flex-row gap-2 text-white hover:text-highlight"><span className="mt-0.5">Om mig </span><Icon className="size-4.75 relative top-0.25" type="person"/></a>
-      <a href="#projects" className="flex flex-row gap-2 text-white hover:text-highlight"><span className="mt-0.5">Projekt </span><Icon className="size-5.5 relative top-0.125" type="keyboard" /></a>
-      <a href="#contact" className="flex flex-row gap-2 text-white hover:text-highlight"><span className="mt-0.5">Kontakt </span><Icon className="size-5.5" type="email" /></a>
+      <a href="#home" className="flex flex-row gap-2 text-white
+         hover:text-highlight transition-colors duration-200
+         focus-visible:outline-none focus-visible:ring-2
+         focus-visible:ring-highlight focus-visible:ring-offset-2
+         focus-visible:ring-offset-dark"><span className="mt-0.5">Hem </span><Icon className="size-6 relative -top-0.25" type="home"/></a>
+      <a href="#about" className="flex flex-row gap-2 text-white
+         hover:text-highlight transition-colors duration-200
+         focus-visible:outline-none focus-visible:ring-2
+         focus-visible:ring-highlight focus-visible:ring-offset-2
+         focus-visible:ring-offset-dark"><span className="mt-0.5">Om mig </span><Icon className="size-4.75 relative top-0.25" type="person"/></a>
+      <a href="#projects" className="flex flex-row gap-2 text-white
+         hover:text-highlight transition-colors duration-200
+         focus-visible:outline-none focus-visible:ring-2
+         focus-visible:ring-highlight focus-visible:ring-offset-2
+         focus-visible:ring-offset-dark"><span className="mt-0.5">Projekt </span><Icon className="size-5.5 relative top-0.125" type="keyboard" /></a>
+      <a href="#contact" className="flex flex-row gap-2 text-white
+         hover:text-highlight transition-colors duration-200
+         focus-visible:outline-none focus-visible:ring-2
+         focus-visible:ring-highlight focus-visible:ring-offset-2
+         focus-visible:ring-offset-dark"><span className="mt-0.5">Kontakt </span><Icon className="size-5.5" type="email" /></a>
     </nav>
     </header>
   )
