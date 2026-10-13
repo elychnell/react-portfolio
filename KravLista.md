@@ -34,10 +34,10 @@
 
 - [x] Minst två meningsfulla användningar av `useState`, varav en ska filtrera projektlistan.
 - [x] Filtret väljer en teknik-tagg i taget, plus ett val som visar alla projekt, t.ex. "Alla".
-- [ ] Andra exempel på meningsfull state:
+- [X] Andra exempel på meningsfull state:
   - [ ] Mobilmeny
   - [ ] Ljust/mörkt tema
-  - [ ] Expanderbar "Läs mer"
+  - [X] Expanderbar "Läs mer"
 - [x] Den filtrerade listan ska räknas fram vid rendering, inte sparas i ett eget state.
 
 ### 5. Styling och animation
@@ -50,12 +50,12 @@
 
 ### 6. Kvalitet och leverans
 
-- [ ] Inga fel eller React-varningar i konsolen.
-- [ ] Driftsatt på Vercel.
-- [ ] `README.md` innehåller:
+- [X] Inga fel eller React-varningar i konsolen.
+- [X] Driftsatt på Vercel.
+- [X] `README.md` innehåller:
   - [x] Projektbeskrivning och tech stack
   - [x] Hur man kör projektet lokalt
-  - [ ] Länk till live-sidan
+  - [X] Länk till live-sidan
   - [x] Länk till Figma-skissen
 
 
@@ -114,9 +114,9 @@ Exempel:
 
 - [x] Stegvisa animationer när man scrollar.
 - [x] Layout-animationer när projekten filtreras.
-- [ ] Animerad öppning och stängning av element, t.ex.:
+- [X] Animerad öppning och stängning av element, t.ex.:
   - [ ] Mobilmeny
-  - [ ] "Läs mer"
+  - [X] "Läs mer"
   - [ ] Modal
 - [x] `AnimatePresence` kan användas.
 
@@ -137,12 +137,12 @@ Reflektionen ska bland annat ta upp:
 
 ### 11. Kvalitet
 
-- [ ] All funktionalitet fungerar utan fel.
-- [ ] Inga React-varningar eller fel i konsolen.
+- [x] All funktionalitet fungerar utan fel.
+- [x] Inga React-varningar eller fel i konsolen.
 - [x] Komponenten är uppdelad på ett tydligt och återanvändbart sätt.
 - [x] Props används där det är lämpligt.
 - [x] State ligger på rätt nivå i komponentträdet.
-- [ ] Kod och filstruktur är lätt att förstå och underhålla.
+- [x] Kod och filstruktur är lätt att förstå och underhålla.
 - [ ] Projektet fungerar på både mobil och desktop.
-- [ ] Projektet är driftsatt på Vercel.
+- [x] Projektet är driftsatt på Vercel.
 - [ ] README är komplett och uppdaterad.

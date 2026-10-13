@@ -1,11 +1,12 @@
 # React Portfolio
 
-A personal portfolio website built as part of my frontend development studies at Medieinstitutet.
+En personlig portfolio-webbplats som byggts som en del av mina frontendutvecklingsstudier på Medieinstitutet.
 
-The portfolio is a responsive React single-page application showcasing my projects, skills and contact information.
-The project is built with React, TypeScript and Tailwind CSS and is intended to develop further throughout my education and eventually be used as my professional portfolio.
+Portfolion är en responsiv React-applikation av typen Single Page Application (SPA) som presenterar mina projekt, kompetenser och kontaktuppgifter.
 
-## Tech Stack
+Projektet är byggt med React, TypeScript och Tailwind CSS och kommer att vidareutvecklas under utbildningens gång för att så småningom användas som min professionella portfolio.
+
+## Teknikstack
 
 - React
 - TypeScript
@@ -15,48 +16,47 @@ The project is built with React, TypeScript and Tailwind CSS and is intended to 
 - Vercel
 - Figma
 
-## Features
+## Funktioner
 
-- Responsive single-page portfolio
-- Navigation between page sections
-- Project showcase with reusable project cards
-- Technology tags for each project
-- Multi-select project filtering
-- Responsive mobile navigation
-- Controlled contact form with validation
-- Form success feedback
-- Responsive design from mobile to desktop
-- CSS transitions and advanced animations
+- Responsiv portfolio som består av en enda sida
+- Navigering mellan olika sidsektioner
+- Projektpresentation med återanvändbara projektkort
+- Tekniktaggar för varje projekt
+- Filtrering av projekt med stöd för flera val
+- Responsiv mobilnavigering
+- Kontrollerat kontaktformulär med validering
+- Bekräftelsemeddelande vid godkänd validering
+- Responsiv design för mobil, surfplatta och dator
+- CSS-övergångar och avancerade animationer
 
-## Projects
+## Projekt
 
-The portfolio currently showcases six projects:
+Portfolion presenterar för närvarande sex projekt:
 
-- **Regn.nu** – Weather and precipitation information using the SMHI API
-- **Phonebook** – React and TypeScript contact management application
-- **Keyboard Warrior** – Typing game built with TypeScript, Express and PostgreSQL
-- **Book Review API** – REST API built with Node.js and Express
-- **Temple of Five** – Group project
-- **React Portfolio** – This portfolio project
+- **Regn.nu** – Väder- och nederbördsinformation med hjälp av SMHI:s API
+- **Phonebook** – Kontaktadministrationsapplikation byggd med React och TypeScript
+- **Keyboard Warrior** – Skrivspel byggt med TypeScript, Express och PostgreSQL
+- **Book Review API** – REST API byggt med Node.js och Express
+- **Temple of Five** – Grupprojekt
+- **React Portfolio** – Det här portfolio-projektet
 
-The project list will be updated as I build more projects during my education.
+Projektlistan kommer att uppdateras i takt med att jag utvecklar fler projekt under utbildningen.
 
 ## Design
 
-The initial design concept was created in Figma before development, with both desktop and mobile layouts.
+Det ursprungliga designkonceptet skapades i Figma innan utvecklingen påbörjades, med layouter för både dator och mobil.
 
-**Figma design:**  
-[Figma design link](https://www.figma.com/make/K3sKH5Sa7179BQvtFCyKwI/Portfolio-Website-Wireframe)
+**Figma-design:**  
+[Visa designkonceptet i Figma](https://www.figma.com/make/K3sKH5Sa7179BQvtFCyKwI/Portfolio-Website-Wireframe)
 
-I used Figma AI to quickly generate an initial design concept based on a detailed prompt. The generated concept also included a complete
-React/Tailwind implementation, but I am **not using the generated code in this project**. 
+Figma-resultatet används enbart som inspiration och som designunderlag för projektet.
+Eventuella större förändringar som görs under utvecklingen kommer att dokumenteras här.
 
-The Figma result is being used only as inspiration and as the design concept for the project.
-Any significant changes made during development will be documented here.
+**den genererade koden används inte i det här projektet**.
 
-## Running Locally
+## Köra projektet lokalt
 
-Clone the repository and install the dependencies:
+Klona repot och installera beroendena:
 
 ```bash
 git clone https://github.com/elychnell/react-portfolio.git
@@ -64,50 +64,56 @@ cd react-portfolio
 npm install
 ```
 
-Start the development server:
+Starta utvecklingsservern:
 
 ```bash
 npm run dev
 ```
 
-The application will then be available at the local development URL shown by Vite.
+Applikationen blir då tillgänglig på den lokala utvecklingsadress som Vite visar i terminalen.
 
-## Live Site
+## Publicerad webbplats
 
-[Vercel live link](https://react-portfolio-delta-livid.vercel.app/)
+[Vercel länk](https://react-portfolio-delta-livid.vercel.app/)
 
-## Project Requirements
+## Projektkrav
 
-This project is based on a school assignment requiring a React SPA portfolio with:
+Projektet utgår från en skoluppgift där kraven omfattar en React-baserad SPA-portfolio med följande funktioner och tekniker:
 
-- React + TypeScript using Vite
-- Reusable components and props
-- Project data stored separately and rendered with `.map()`
-- At least six projects
-- Home, About, Projects and Contact sections
-- Responsive design
-- Project filtering
-- Meaningful use of React state
-- At least one animation or transition
-- GitHub repository
-- Vercel deployment
-- Figma sketches for desktop and mobile
+- React och TypeScript med Vite
+- Återanvändbara komponenter och props
+- Projektdata lagrad separat och renderad med `.map()`
+- Minst sex projekt
+- Sektionerna Home, About, Projects och Contact
+- Responsiv design
+- Projektfiltrering
+- Meningsfull användning av React state
+- Minst en animation eller övergång
+- GitHub-repo
+- Publicering via Vercel
+- Skisser i Figma för dator och mobil
 
-### VG Requirements
+### Krav för väl godkänt (VG)
 
-The project is being developed with the VG requirements in mind, including:
+Projektet utvecklas med VG-kraven i åtanke, bland annat:
 
-- Controlled contact form
-- Object-based form state
-- Per-field validation and error messages
-- Success feedback after valid submission
-- Thoughtful state placement
-- Multi-select project filtering
-- Animated UI interactions
-- Component and state architecture reflection
+- Kontrollerat kontaktformulär
+- Objektbaserad state för formulärdata
+- Validering och felmeddelanden för enskilda fält
+- Bekräftelsemeddelande efter godkänd validering
+- Genomtänkt placering av state
+- Filtrering av projekt med stöd för flera val
+- Animerade gränssnittsinteraktioner
+- Reflektion kring komponentstruktur och state-arkitektur
 
-## Reflection
+## Reflektion
 
-*To be completed when the project is finished.*
+*Fylls i när projektet är färdigt.*
 
-The reflection will cover the component architecture, state management decisions, what I would change in retrospect, and how AI tools were used during the project.
+Jag använde Figma AI för att snabbt ta fram ett första designkoncept utifrån en detaljerad prompt.
+Det genererade resultatet innehöll även en komplett implementation med React och Tailwind CSS
+
+
+Reflektionen kommer att behandla komponentarkitekturen,
+beslut kring state-hantering, vad jag skulle göra annorlunda
+i efterhand samt hur AI-verktyg har använts under projektets gång.
