@@ -37,10 +37,10 @@ const handleTagClick = (tag: string) => {
     <section className="scroll-mt-16 bg-light text-dark py-14 px-4 flex flex-col items-center justify-center w-full" id="projects">
       <div className="flex flex-row gap-[25em] items-between justify-center mb-4 flex-wrap">
         <div>
-        <p className="text-base font-semibold text-primary tracking-wide">02 / UTVALDA ARBETEN</p>
-        <h2 className="text-6xl font-extrabold text-primary">Mina projekt</h2>
+        <p className="text-base font-semibold text-highlight tracking-wide">02 / UTVALDA ARBETEN</p>
+        <h2 className="text-6xl font-extrabold text-black">Mina projekt</h2>
         </div>
-        <p className="text-base text-primary max-w-[24em] mt-9">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
+        <p className="text-base text-black max-w-[24em] mt-9">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
       </div>
       <Decoration type="heart" className="relative top-3 mx-auto w-120 h-auto text-black" />
       {selectedProjectId === null ? (<ProjectFilter handleTagClick={handleTagClick} handleClear={handleClear} selectedTags={selectedTags} />) : (<div className="h-6 my-4" aria-hidden="true" />)}
