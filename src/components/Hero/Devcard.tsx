@@ -13,7 +13,7 @@ function Devcard() {
           </div>
           </div>
           <div className="flex items-end justify-between border-t border-[#151824]/8 pt-4">
-          <span className="font-mono text-xs text-[#757a8a]">emil.dev</span>
+          <span className="font-mono text-xs text-[#6E7281]">emil.dev</span>
           <span className="flex items-center gap-2 text-xs font-semibold">
             <span className="size-2 rounded-full bg-[#43b97b]"></span>Tillgänglig för praktik</span>
             </div>
