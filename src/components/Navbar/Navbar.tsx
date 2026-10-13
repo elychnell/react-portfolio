@@ -2,7 +2,7 @@ import Icon from "../Icon"
 
 function Navbar() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between gap-4 border-b border-primary bg-dark py-4 px-50">
+    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between border-b border-primary bg-dark py-3 px-50">
     <div className="flex items-center gap-2 text-white">
     <span className="flex size-8 items-center justify-center rounded-full bg-light text-xs font-bold">
     EL
