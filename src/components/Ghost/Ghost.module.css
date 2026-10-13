@@ -1,10 +1,3 @@
-/* 
-  --color-primary: #4F772D;
-  --color-dark: #132A13;
-  --color-light: #90A955;
-  --color-lighter: #31572C;
-  --color-highlight: #ECF39E;
-*/
 
 .ghostAside {
   position: absolute;
@@ -23,10 +16,6 @@
     justify-content: center;
     width: 400px;
     height: 200px;
-}
-
-.ghostText {
-  color: var(--color-primary);
 }
 
 .line1 {
@@ -59,32 +48,40 @@ color: var(--color-light);
 fill: transparent;
 }
 
-.outline {
+.ghostText {
+  color: var(--color-primary);
+}
+
+.outline, .mouth, .leftEye, .rightEye {
 fill: var(--color-primary)
 }
 
 .ghostBackground {
-fill: var(--color-light)
+fill: transparent;
 }
 
-.middleHighlight {
+.leftHighlight, .middleHighlight, .restHighlight {
 fill: var(--color-lighter)
 }
 
-.restHighlight {
-fill: var(--color-lighter)
+/* LIGHT THEME – mörkgrön bakgrund */
+.ghostAsideLight .ghostText {
+  color: var(--color-highlight);
 }
 
-.leftHighlight {
-fill: var(--color-lighter)
+.ghostAsideLight .outline,
+.ghostAsideLight .mouth,
+.ghostAsideLight .leftEye,
+.ghostAsideLight .rightEye {
+  fill: var(--color-highlight);
 }
-.mouth {
-fill: var(--color-primary)
 
+.ghostAsideLight .middleHighlight,
+.ghostAsideLight .restHighlight,
+.ghostAsideLight .leftHighlight {
+  fill: var(--color-light);
 }
-.leftEye {
-fill: var(--color-primary)
-}
-.rightEye {
-fill: var(--color-primary)
+
+.ghostAsideLight .date {
+  color: var(--color-dark);
 }

@@ -48,7 +48,7 @@ export const projects: Project[] = [
   description: "Ett REST API byggt med Node.js och Express där användare kan hantera böcker och recensioner. Projektet utvecklades som ett grupparbete med fokus på API-struktur, routes, datahantering och backendutveckling.",
   longDescription: "I det här grupparbetet låg fokus på att bygga ett REST API med Node.js och Express för hantering av böcker och recensioner. Arbetet omfattade API-struktur, routes och datahantering. Projektet gav mig praktisk erfarenhet av hur en backend exponerar funktionalitet genom endpoints och hur olika delar av en applikation behöver samverka. Det gav också en bättre förståelse för samspelet mellan frontend och backend.",
   tags: ["Node.js", "Express", "API"],
-  image: '/img/project4.webp',
+  image: '/img/bookAPI.webp',
   repoUrl: 'https://github.com/elychnell/Gruppuppgift-API-utveckling',
   liveUrl: 'https://gruppuppgift-api-utveckling.vercel.app/'
 },{

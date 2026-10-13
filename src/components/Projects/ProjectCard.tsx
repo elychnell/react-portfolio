@@ -122,11 +122,11 @@ const [xOffset, setXOffset] = useState(0);
         ))}
       </div>
       <div className="flex flex-row justify-center gap-6">
-      <a href={project.repoUrl} target="_blank" aria-label="Link to GitHub repository" rel="noopener noreferrer" className="text-closeWhite underline flex flex-row gap-1">
+      <a href={project.repoUrl} target="_blank" aria-label="Link to GitHub repository" rel="noopener noreferrer" className="text-closeWhite flex flex-row gap-1 decoration-1 underline-offset-4 hover:underline">
       <Icon type="github" className="size-6" />  GitHub Repo
       </a>
       {project.liveUrl && (
-        <a href={project.liveUrl} target="_blank" aria-label="Link to live site" rel="noopener noreferrer" className="text-closeWhite underline ml-4 flex flex-row gap-1">
+        <a href={project.liveUrl} target="_blank" aria-label="Link to live site" rel="noopener noreferrer" className="text-closeWhite ml-4 flex flex-row gap-1 decoration-1 underline-offset-4 hover:underline">
          <Icon type="www" className="size-6" /> Live Site
         </a>)}  
       </div>

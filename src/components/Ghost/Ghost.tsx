@@ -1,12 +1,16 @@
 import styles from "./Ghost.module.css";
 import GhostIcon from "./GhostIcon";
 import { motion } from "motion/react";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 function Ghost() {
+const ghostElementRef = useRef<HTMLElement | null>(null);
 
 const baseX = -35;
+
 const ghostRef = useCallback((element: HTMLElement | null) => {
+  ghostElementRef.current = element;
+
   if (!element) return;
 
   setGhostTop(GhostPosition(element));
@@ -16,6 +20,7 @@ const ghostRef = useCallback((element: HTMLElement | null) => {
 const [ghostTop, setGhostTop] = useState<number>(() => GhostPosition());
 const [ghostReady, setGhostReady] = useState<boolean>(false);
 const [isAnimating, setIsAnimating] = useState(false);
+const [isOverProjects, setIsOverProjects] = useState(false);
 
 const [xFloat, setXFloat] = useState(0);
 const [yFloat, setYFloat] = useState(0);
@@ -27,7 +32,8 @@ function GhostPosition (element?: HTMLElement | null): number {
   const pageHeight: number = page?.getBoundingClientRect().height || 0;
   const GhostHeight: number = element?.offsetHeight || 0;
   const minTop: number = 0;
-  const maxTop: number = Math.max(0, pageHeight - GhostHeight);
+  const bottomMargin = 50;
+  const maxTop = Math.max(0, pageHeight - GhostHeight - bottomMargin);
 
   return Math.floor(Math.random() * (maxTop - minTop + 1)) + minTop;
 } 
@@ -39,9 +45,26 @@ function randomizeGhost() {
   setDelay(Math.floor(Math.random() * 11) + 5);
 }
 
+function checkProjectsOverlap() {
+  const ghost = ghostElementRef.current;
+  const projects = document.getElementById("projects");
 
+  if (!ghost || !projects) return;
+
+  const ghostRect = ghost.getBoundingClientRect();
+  const projectsRect = projects.getBoundingClientRect();
+
+  const ghostMiddle = ghostRect.top + ghostRect.height / 2;
+
+  const isInsideProjects =
+    ghostMiddle >= projectsRect.top &&
+    ghostMiddle <= projectsRect.bottom;
+
+  setIsOverProjects(current =>
+    current === isInsideProjects ? current : isInsideProjects
+  );
+}
  
-
   useEffect(() => {
     setGhostReady(true);
   }, []);
@@ -54,7 +77,6 @@ function randomizeGhost() {
   }, delay * 1000);
   }, [isAnimating, ghostReady]);
 
-
   return (
     <motion.aside ref={ghostRef} style={{top: ghostTop}} initial={{  left: -425 }} animate={
       isAnimating
@@ -63,10 +85,13 @@ function randomizeGhost() {
      }
     : { left: -425 }
     }
-       
+    onUpdate={checkProjectsOverlap}
     transition={{ duration: 4.25 /*, repeat: Infinity, repeatType: "loop" */ }}
     onAnimationComplete={() => { setIsAnimating(false); }}
-    className={styles.ghostAside}>
+    className={`${styles.ghostAside} ${
+  isOverProjects ? styles.ghostAsideLight : ""
+}`}
+    >
       <div className={styles.ghostContent}>
         <GhostIcon />
         <div className={styles.ghostText}>

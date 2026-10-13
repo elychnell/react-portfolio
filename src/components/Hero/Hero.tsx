@@ -3,8 +3,8 @@ import Decoration from "../Decoration"
 
 function Hero() {
   return (
-    <section className="scroll-mt-24 mx-auto grid max-w-[99rem] items-stretch gap-12 lg:grid-cols-2 mt-10 px-10 py-20 rounded-lg" id="home">
-      <div>
+    <section className="scroll-mt-24 mx-auto grid max-w-[88rem] items-stretch gap-12 lg:grid-cols-2 mt-10 py-20 rounded-lg" id="home">
+      <div className="max-w-full">
         <p className="text-base font-semibold text-primary tracking-wide">FRONTEND UTVECKLARE I UPPSALA</p>
         <h1 className="text-8xl font-extrabold text-light tracking-tight">Hej, jag är <span className="text-primary">Emil.</span></h1>
         <h2 className="mt-3 text-2xl font-semibold text-primary">Frontend Developer</h2>

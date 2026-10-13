@@ -70,7 +70,7 @@ function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
   }
 
   return (
-    <form onSubmit={(e) => handleFormSubmit(e)} className="flex flex-col gap-2 max-w-md bg-white p-4 rounded shadow-md w-850">
+    <form onSubmit={(e) => handleFormSubmit(e)} className="flex flex-col gap-2 max-w-md bg-white p-4 rounded-lg shadow-md w-850">
     <div className="relative">
     <input
     id="name"
