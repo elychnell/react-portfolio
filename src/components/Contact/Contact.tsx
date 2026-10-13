@@ -8,7 +8,7 @@ function Contact() {
       <div className="mx-auto flex max-w-[92rem] flex-row items-start justify-between py-24 sm:px-6 lg:px-8">
       <div className="flex-shrink-0">
       <p className="text-base font-semibold text-primary tracking-wide">03 / KONTAKT</p>
-      <h4 className="sm:text-5xl text-4xl font-semibold leading-tight">Har du en idé?<br />Hör av dig.</h4>
+      <h2 className="sm:text-5xl text-4xl font-semibold leading-tight">Har du en idé?<br />Hör av dig.</h2>
       <p className="mt-4 text-base max-w-md leading-7 sm:text-xl sm:leading-8 text-primary">
         Jag är alltid öppen för nya kontakter, samarbeten och möjligheter att lära mig mer.
       </p>

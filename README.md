@@ -2,7 +2,8 @@
 
 A personal portfolio website built as part of my frontend development studies at Medieinstitutet.
 
-The portfolio is a responsive React single-page application showcasing my projects, skills and contact information. The project is built with React, TypeScript and Tailwind CSS and is intended to develop further throughout my education and eventually be used as my professional portfolio.
+The portfolio is a responsive React single-page application showcasing my projects, skills and contact information.
+The project is built with React, TypeScript and Tailwind CSS and is intended to develop further throughout my education and eventually be used as my professional portfolio.
 
 ## Tech Stack
 
@@ -45,10 +46,12 @@ The project list will be updated as I build more projects during my education.
 The initial design concept was created in Figma before development, with both desktop and mobile layouts.
 
 **Figma design:**  
-https://www.figma.com/make/K3sKH5Sa7179BQvtFCyKwI/Portfolio-Website-Wireframe
+[Figma design link](https://www.figma.com/make/K3sKH5Sa7179BQvtFCyKwI/Portfolio-Website-Wireframe)
 
-I used Figma AI to quickly generate an initial design concept based on a detailed prompt. The generated concept also included a complete React/Tailwind implementation, but I am **not using the generated code in this project**. The Figma result is being used only as inspiration and as the design concept for the project.
+I used Figma AI to quickly generate an initial design concept based on a detailed prompt. The generated concept also included a complete
+React/Tailwind implementation, but I am **not using the generated code in this project**. 
 
+The Figma result is being used only as inspiration and as the design concept for the project.
 Any significant changes made during development will be documented here.
 
 ## Running Locally
@@ -71,7 +74,7 @@ The application will then be available at the local development URL shown by Vit
 
 ## Live Site
 
-Coming soon – the project will be deployed to Vercel.
+[Vercel live link](https://react-portfolio-delta-livid.vercel.app/)
 
 ## Project Requirements
 

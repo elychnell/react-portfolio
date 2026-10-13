@@ -38,7 +38,7 @@ const handleTagClick = (tag: string) => {
       <div className="flex flex-row gap-[25em] items-between justify-center mb-4 flex-wrap">
         <div>
         <p className="text-base font-semibold text-primary tracking-wide">02 / UTVALDA ARBETEN</p>
-        <h3 className="text-6xl font-extrabold text-primary">Mina projekt</h3>
+        <h2 className="text-6xl font-extrabold text-primary">Mina projekt</h2>
         </div>
         <p className="text-base text-primary max-w-[24em] mt-9">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
       </div>

@@ -39,7 +39,8 @@ export const projects: Project[] = [
     tags: ["TypeScript", "WebSockets", "Node.js", "Express", "PostgreSQL"],
     image: '/img/project3.webp',
     repoUrl: 'https://github.com/elychnell/keyboard-warrior',
-    liveUrl: ''
+    liveUrl: 'Live länk kommer snart'
+    /* Render/Neon (WIP) */
   },
   {
   id: 5,
@@ -58,7 +59,7 @@ export const projects: Project[] = [
   tags: ["React", "TypeScript", "Tailwind", "Vite"],
   image: '/img/project4.webp',
   repoUrl: 'https://github.com/elychnell/react-portfolio',
-  liveUrl: 'Vervel (WIP)' 
+  liveUrl: 'https://react-portfolio-delta-livid.vercel.app/' 
   }
   
 ]

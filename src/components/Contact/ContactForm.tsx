@@ -75,6 +75,7 @@ function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
     <input
     id="name"
     name="name"
+    autoComplete="name"  
     type="text"
     placeholder=" "
     className="peer w-full rounded border border-gray-300 bg-white px-3 pb-2 pt-5 text-black focus:border-primary focus:outline-none"
@@ -97,6 +98,7 @@ function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
     <input
     id="email"
     name="email"
+    autoComplete="email"
     type="email"
     placeholder=" "
     className="peer w-full rounded border border-gray-300 bg-white px-3 pb-2 pt-5 text-black focus:border-primary focus:outline-none"
@@ -119,6 +121,7 @@ function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
     <input
     id="phone"
     name="phone"
+    autoComplete="tel"
     type="tel"
     placeholder=" "
     className="peer w-full rounded border border-gray-300 bg-white px-3 pb-2 pt-5 text-black focus:border-primary focus:outline-none"
@@ -139,7 +142,9 @@ function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
     <div className="relative">
     <input
     id="subject"
-    name="subject" type="text" placeholder=" "
+    name="subject"
+    type="text"
+    placeholder=" "
     className="peer w-full rounded border border-gray-300 bg-white px-3 pb-2 pt-5 text-black focus:border-primary focus:outline-none"
     aria-invalid={Boolean(errors.subject)}
     aria-describedby={errors.subject ? "subject-error" : undefined}
