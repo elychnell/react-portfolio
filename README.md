@@ -68,6 +68,9 @@ Utöver detta har jag lagt till dekorationer, ikoner och animationer som inte fa
 Komponenterna `DevCard` och `CatBubble` är särskilt inspirerade av det ursprungliga designkonceptet,  
 men har modifierats och anpassats till den färdiga webbplatsens utseende.
 
+Jag valde också att gå ifrån tailwind och använda CSS.modules för sjävla Ghost komponenten och animationen dels för att  
+jag ville testa att använda det skarpt och för att den komponenten iprincip är självstående från övriga delarna av sidan.
+
 ## Köra projektet lokalt
 
 Klona repot och installera beroendena:

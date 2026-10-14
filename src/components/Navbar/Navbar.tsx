@@ -1,12 +1,13 @@
 import { useState } from "react";
 import Icon from "../Icon"
+import { AnimatePresence, motion } from "motion/react";
 
 function Navbar() {
 
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between border-b border-primary bg-dark py-3 px-50">
+    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between border-b border-primary bg-dark py-3 px-4 sm:px-8 lg:px-50">
     <div className="flex items-center gap-2 text-white">
     <span className="flex size-8 items-center justify-center rounded-full bg-light text-xs font-bold">
     EL
@@ -14,9 +15,52 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
     Emil Lychnell
     </div>
 
-    <button className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-      <Icon type="menu" />
+    <button 
+    type="button"
+    aria-label={isMenuOpen ? "Stäng meny" : "Öppna meny"}
+    aria-expanded={isMenuOpen}
+    aria-controls="mobile-navigation"
+    className="size-8 text-white lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+   <Icon type="menu" />
     </button>
+   {isMenuOpen && (
+   <nav
+    id="mobile-navigation"
+    className="absolute right-4 top-full origin-topright w-[125px] rounded-lg border border-primary bg-dark p-4 shadow-xl lg:hidden"
+   >
+   <div className="flex flex-col gap-4">
+   <a href="#home"
+   className="flex flex-row gap-2 text-white
+         hover:text-highlight transition-colors duration-200
+         focus-visible:outline-none focus-visible:ring-2
+         focus-visible:ring-highlight focus-visible:ring-offset-2
+         focus-visible:ring-offset-dark"
+   onClick={() => setIsMenuOpen(false)}><span className="mb-1">Hem </span><Icon className="size-6 relative " type="home"/></a>
+   <a href="#about" 
+   className="flex flex-row gap-2 text-white
+         hover:text-highlight transition-colors duration-200
+         focus-visible:outline-none focus-visible:ring-2
+         focus-visible:ring-highlight focus-visible:ring-offset-2
+         focus-visible:ring-offset-dark"
+   onClick={() => setIsMenuOpen(false)}><span>Om mig </span><Icon className="size-4.75 relative top-0.5" type="person"/></a>
+   <a href="#projects" 
+   className="flex flex-row gap-2 text-white
+         hover:text-highlight transition-colors duration-200
+         focus-visible:outline-none focus-visible:ring-2
+         focus-visible:ring-highlight focus-visible:ring-offset-2
+         focus-visible:ring-offset-dark"
+   onClick={() => setIsMenuOpen(false)}><span>Projekt </span><Icon className="size-5.5 relative top-0.25" type="keyboard" /></a>
+   <a href="#contact"
+   className="flex flex-row gap-2 text-white
+         hover:text-highlight transition-colors duration-200
+         focus-visible:outline-none focus-visible:ring-2
+         focus-visible:ring-highlight focus-visible:ring-offset-2
+         focus-visible:ring-offset-dark"
+   onClick={() => setIsMenuOpen(false)}><span>Kontakt </span><Icon className="size-5.5 relative top-0.25" type="email" /></a>
+    </div>
+  </nav>
+)}
+
     <nav className="hidden lg:flex gap-4 text-sm font-semibold">
       <a href="#home" className="flex flex-row gap-2 text-white
          hover:text-highlight transition-colors duration-200

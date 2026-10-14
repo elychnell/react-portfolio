@@ -1,5 +1,5 @@
 type IconProps = {
-  type: 'email' | 'github' | 'linkedin' | 'www' | 'keyboard' | 'person' | 'home'
+  type: 'email' | 'github' | 'linkedin' | 'www' | 'keyboard' | 'person' | 'home' | 'menu'
   className?: string
 }
 
@@ -86,7 +86,15 @@ function Icon({ type, className }: IconProps) {
 	  <path fill="currentColor" d="M233.406,156.781c7.109,0,12.875-5.781,12.875-12.875v-2.922c0-7.109-5.766-12.875-12.875-12.875
 		s-12.875,5.766-12.875,12.875v2.922C220.531,151,226.297,156.781,233.406,156.781z"/>
     </svg>
-) : null
+): type === "menu" ? (
+    // Hamburger Menu icon
+    <svg aria-hidden="true" className={`shrink-0 ${className}`} version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xmlSpace="preserve">
+	<path fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" d="M24,28H8c-2.2,0-4-1.8-4-4V8c0-2.2,1.8-4,4-4h16c2.2,0,4,1.8,4,4v16C28,26.2,26.2,28,24,28z"/>
+	<line fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" x1="10" y1="16" x2="22" y2="16"/>
+	<line fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" x1="10" y1="12" x2="22" y2="12"/>
+	<line fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" x1="10" y1="20" x2="22" y2="20"/>
+	</svg>
+  ) : null
   )
 }
 

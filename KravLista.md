@@ -145,4 +145,7 @@ Reflektionen ska bland annat ta upp:
 - [x] Kod och filstruktur är lätt att förstå och underhålla.
 - [ ] Projektet fungerar på både mobil och desktop.
 - [x] Projektet är driftsatt på Vercel.
-- [ ] README är komplett och uppdaterad.
+- [x] README är komplett och uppdaterad.
+
+- [ ] Helt responsiv från ca 360px upp till desktop-bredd.
+- [ ] Projektet fungerar på både mobil och desktop.
