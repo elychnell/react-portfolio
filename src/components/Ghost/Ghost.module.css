@@ -3,8 +3,10 @@
   position: absolute;
   pointer-events: none;
   overflow-anchor: none;
-  height: 200px;
-  width: 400px;
+  z-index: 99999999;
+  
+  height: 130px;
+  width: 270px;
 }
 
 /* GHOST ELEMENT */
@@ -14,8 +16,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 400px;
-    height: 200px;
+    
 }
 
 .line1 {
@@ -85,3 +86,43 @@ fill: var(--color-lighter)
 .ghostAsideLight .date {
   color: var(--color-dark);
 }
+
+/* SM: 640px och upp */
+@media (min-width: 40rem) {}
+
+/* MD  768px och upp */
+@media (min-width: 48rem) {
+ .ghostAside {
+    width: 320px;
+    height: 160px;
+  }
+
+  .ghostContent {
+    width: 320px;
+    height: 160px;
+  }
+
+  .ghostIcon {
+    width: 120px;
+    height: 120px;
+  }
+}
+/* LG 1024px och upp */
+@media (min-width: 64rem) {
+.ghostAside {
+width: 400px;
+height: 200px;
+}
+.ghostContent {
+width: 400px;
+height: 200px;
+}
+
+.ghostIcon {
+width: 150px;
+height: 150px;
+}
+}
+
+/* XL 1280px och upp */
+@media (min-width: 80rem) {}

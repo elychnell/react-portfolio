@@ -32,7 +32,7 @@ function GhostPosition (element?: HTMLElement | null): number {
   const pageHeight: number = page?.getBoundingClientRect().height || 0;
   const GhostHeight: number = element?.offsetHeight || 0;
   const minTop: number = 0;
-  const bottomMargin = 50;
+  const bottomMargin = 100;
   const maxTop = Math.max(0, pageHeight - GhostHeight - bottomMargin);
 
   return Math.floor(Math.random() * (maxTop - minTop + 1)) + minTop;

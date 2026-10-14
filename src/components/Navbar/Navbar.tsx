@@ -20,8 +20,9 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
     aria-label={isMenuOpen ? "Stäng meny" : "Öppna meny"}
     aria-expanded={isMenuOpen}
     aria-controls="mobile-navigation"
-    className="size-8 text-white lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-   <Icon type="menu" />
+    className="lg:hidden"
+    onClick={() => setIsMenuOpen(!isMenuOpen)}>
+   <Icon type="menu" className="size-6 text-white" />
     </button>
    {isMenuOpen && (
    <nav

@@ -12,13 +12,13 @@ const locationClass = location === "contact" ? "text-primary decoration-1 underl
   return (
     type === "email" ? (
     // Email icon
-    <a href="mailto:elychnell@gmail.com" aria-label="Link to email" className={`${locationClass} flex items-center gap-2 hover:underline`}><Icon type="email" className="size-6" /> elychnell@gmail.com</a>
+    <a href="mailto:elychnell@gmail.com" aria-label="Link to email" className={`${locationClass} flex items-center gap-2 hover:underline text-sm lg:text-base`}><Icon type="email" className="size-4 lg:size-6" /> elychnell@gmail.com</a>
     ) : type === "github" ? (
     // GitHub icon
-    <a href="https://github.com/elychnell" aria-label="Link to GitHub" className={`${locationClass} flex items-center gap-2 hover:underline`}><Icon type="github" className="size-6" /> GitHub</a>
+    <a href="https://github.com/elychnell" aria-label="Link to GitHub" className={`${locationClass} flex items-center gap-2 hover:underline text-sm lg:text-base`}><Icon type="github" className="size-4  lg:size-6" /> GitHub</a>
    ) : type === "linkedin" ? (
     // LinkedIn link
-   <a href="https://www.linkedin.com/in/emil-lychnell-02b805335" aria-label="Link to LinkedIn" className={`${locationClass} flex items-center gap-2 hover:underline`}><Icon type="linkedin" className="size-6" /> LinkedIn</a>
+   <a href="https://www.linkedin.com/in/emil-lychnell-02b805335" aria-label="Link to LinkedIn" className={`${locationClass} flex items-center gap-2 hover:underline text-sm lg:text-base`}><Icon type="linkedin" className="size-4  lg:size-6" /> LinkedIn</a>
 ) : null
   )
 }

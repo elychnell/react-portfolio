@@ -5,7 +5,7 @@ import Decoration from '../Decoration'
 function Contact() {
   return (
     <section className="scroll-mt-14 bg-highlight w-full min-h-[60vh]" id="contact">
-      <div className="mx-auto flex max-w-[92rem] flex-row items-start justify-between py-24 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-[92rem] flex-col items-start gap-8 px-4 py-16 sm:px-6 md:flex-row lg:px-8 lg:py-24">
       <div className="flex-shrink-0">
       <p className="text-base font-semibold text-primary tracking-wide">03 / KONTAKT</p>
       <h2 className="sm:text-5xl text-4xl font-semibold leading-tight">Har du en idé?<br />Hör av dig.</h2>
@@ -18,7 +18,7 @@ function Contact() {
       <SocialLinks type="linkedin" location="contact" />
       </div>
       </div>
-      <Decoration type="arrow" className="pt-25 w-100 h-auto text-primary" />
+      <Decoration type="arrow" className="mx-auto w-full max-w-[160px] md:max-w-[400px] h-auto text-primary rotate-90 px-4 md:rotate-0 pt-10 pb-10 md:pt-25" />
       <ContactForm />
       </div>
     </section>
