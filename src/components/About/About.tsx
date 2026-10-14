@@ -12,7 +12,7 @@ function About() {
             01 / OM MIG
           </p>
 
-          <h2 className="mb-4 max-w-md text-5xl font-extrabold leading-tight text-black md:text-6xl">
+          <h2 className="mb-4 max-w-md text-5xl font-extrabold leading-tight text-blacknpm  md:text-6xl">
             Nyfiken på hur bra idéer blir bra webb.
           </h2>
         </div>
