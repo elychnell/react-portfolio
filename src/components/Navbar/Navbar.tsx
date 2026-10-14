@@ -1,6 +1,10 @@
+import { useState } from "react";
 import Icon from "../Icon"
 
 function Navbar() {
+
+const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between border-b border-primary bg-dark py-3 px-50">
     <div className="flex items-center gap-2 text-white">
@@ -9,7 +13,11 @@ function Navbar() {
     </span>
     Emil Lychnell
     </div>
-    <nav className="flex gap-4 text-sm font-semibold">
+
+    <button className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+      <Icon type="menu" />
+    </button>
+    <nav className="hidden lg:flex gap-4 text-sm font-semibold">
       <a href="#home" className="flex flex-row gap-2 text-white
          hover:text-highlight transition-colors duration-200
          focus-visible:outline-none focus-visible:ring-2

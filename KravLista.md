@@ -6,7 +6,7 @@
 
 - [x] Gör en Figma-skiss av sidan, för både mobil och desktop, innan ni kodar.
 - [x] Den färdiga sidan ska följa skissen.
-- [ ] Ändringar under arbetets gång är okej, men beskriv dem i `README.md`.
+- [x] Ändringar under arbetets gång är okej, men beskriv dem i `README.md`.
 
 ### 2. Struktur och komponenter
 
@@ -35,7 +35,7 @@
 - [x] Minst två meningsfulla användningar av `useState`, varav en ska filtrera projektlistan.
 - [x] Filtret väljer en teknik-tagg i taget, plus ett val som visar alla projekt, t.ex. "Alla".
 - [X] Andra exempel på meningsfull state:
-  - [ ] Mobilmeny
+  - [x] Mobilmeny
   - [ ] Ljust/mörkt tema
   - [X] Expanderbar "Läs mer"
 - [x] Den filtrerade listan ska räknas fram vid rendering, inte sparas i ett eget state.
@@ -115,7 +115,7 @@ Exempel:
 - [x] Stegvisa animationer när man scrollar.
 - [x] Layout-animationer när projekten filtreras.
 - [X] Animerad öppning och stängning av element, t.ex.:
-  - [ ] Mobilmeny
+  - [x] Mobilmeny
   - [X] "Läs mer"
   - [ ] Modal
 - [x] `AnimatePresence` kan användas.
@@ -126,9 +126,9 @@ README ska innehålla en reflektion på cirka 200–400 ord.
 
 Reflektionen ska bland annat ta upp:
 
-- [ ] Förklaring av komponentarkitekturen.
-- [ ] Förklaring av beslut kring state.
-- [ ] Vad ni skulle göra annorlunda.
+- [x] Förklaring av komponentarkitekturen.
+- [x] Förklaring av beslut kring state.
+- [x] Vad ni skulle göra annorlunda.
 - [x] Eventuell användning av AI-verktyg:
   - [x] Vilka AI-verktyg användes?
   - [x] Vad användes de till?
