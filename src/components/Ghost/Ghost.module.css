@@ -5,8 +5,8 @@
   overflow-anchor: none;
   z-index: 99999999;
   
-  height: 130px;
-  width: 270px;
+  width: 250px;
+  height: 100px;
 }
 
 /* GHOST ELEMENT */
@@ -17,31 +17,42 @@
     align-items: center;
     justify-content: center;
     
-}
-
-.line1 {
-position: relative;
-top: 5px;
-font-size: 1.5rem;
-}
-
-.line2 {
-position: relative;
-left: 2px;
-font-size: 1.25rem;
-}
-
-.date {
-position: relative;
-left: 6px;
-font-size: 1rem;
-color: var(--color-light);
+    width: 250px;
+    height: 100px;
 }
 
 /* GHOST ICON */
 .ghostIcon {
-    width: 150px;
-    height: 150px;
+    width: 93.75px;
+    height: 93.75px;
+    filter: drop-shadow(2px 2px 2px var(--color-dark));
+}
+
+.line1 {
+position: relative;
+
+text-shadow: 2px 2px 1px var(--color-dark);
+font-size: 1.25rem;
+top: 6px;
+}
+
+.line2 {
+position: relative;
+
+text-shadow: 2px 2px 2px var(--color-dark);
+font-size: 1.15rem;
+left: 1px;
+top: -4px;
+}
+
+.date {
+position: relative;
+color: var(--color-light);
+
+text-shadow: 2px 2px 2px var(--color-dark);
+font-size: 0.75rem;
+left: 3px;
+top: -10px;
 }
 
 /* GHOST ICON COLORS */
@@ -88,25 +99,71 @@ fill: var(--color-lighter)
 }
 
 /* SM: 640px och upp */
-@media (min-width: 40rem) {}
+@media (min-width: 40rem) {
+.ghostAside {
+width: 250px;
+height: 150px;
+}
+
+.ghostContent {
+width: 250px;
+height: 150px;
+}
+
+.ghostIcon {
+width: 93.75px;
+height: 93.75px;
+}
+
+.line1 {
+top: 5px;
+font-size: 1.5rem;
+}
+
+.line2 {
+left: 2px;
+font-size: 1.25rem;
+}
+
+.date {
+left: 6px;
+font-size: 1rem;
+}
+}
 
 /* MD  768px och upp */
 @media (min-width: 48rem) {
- .ghostAside {
-    width: 320px;
-    height: 160px;
-  }
-
-  .ghostContent {
-    width: 320px;
-    height: 160px;
-  }
-
-  .ghostIcon {
-    width: 120px;
-    height: 120px;
-  }
+.ghostAside {
+width: 300px;
+height: 125px;
 }
+
+.ghostContent {
+width: 300px;
+height: 150px;
+}
+
+.ghostIcon {
+width: 120px;
+height: 120px;
+}
+
+.line1 {
+top: 5px;
+font-size: 1.5rem;
+}
+
+.line2 {
+left: 2px;
+font-size: 1.25rem;
+}
+
+.date {
+left: 6px;
+font-size: 1rem;
+}
+}
+
 /* LG 1024px och upp */
 @media (min-width: 64rem) {
 .ghostAside {
@@ -122,7 +179,24 @@ height: 200px;
 width: 150px;
 height: 150px;
 }
+.line1 {
+top: 5px;
+font-size: 1.5rem;
+}
+
+.line2 {
+left: 2px;
+font-size: 1.25rem;
+}
+
+.date {
+left: 6px;
+font-size: 1rem;
+}
+
 }
 
 /* XL 1280px och upp */
-@media (min-width: 80rem) {}
+@media (min-width: 80rem) {
+
+}

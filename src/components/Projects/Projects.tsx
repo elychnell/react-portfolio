@@ -37,12 +37,12 @@ const handleTagClick = (tag: string) => {
     <section className="scroll-mt-16 bg-light text-dark py-14 px-4 flex flex-col items-center justify-center w-full" id="projects">
       <div className="flex flex-col gap-4 md:flex-row md:gap-8 lg:gap-[20em] items-between justify-center mb-4 flex-wrap">
         <div>
-        <p className="text-base font-semibold text-black tracking-wide">02 / UTVALDA ARBETEN</p>
-        <h2 className="text-6xl font-extrabold text-black">Mina projekt</h2>
+        <p className="text-base font-semibold text-black tracking-wide text-shadow-xs text-shadow-highlight">02 / UTVALDA ARBETEN</p>
+        <h2 className="text-6xl font-extrabold text-black text-shadow-md text-shadow-highlight">Mina projekt</h2>
         </div>
-        <p className="text-closeBlack max-w-[24em] text-2xl mt-9">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
+        <p className="text-black max-w-[24em] text-2xl mt-9 text-shadow-xs text-shadow-highlight">Ett urval av projekt från min utbildning och egen tid — från små gränssnitt till fullstack-applikationer.</p>
       </div>
-      <Decoration type="heart" className="relative top-3 mx-auto w-full max-w-[480px] h-auto text-black" />
+      <Decoration type="heart" className="relative top-3 mx-auto w-full max-w-[480px] h-auto text-black drop-shadow-md drop-shadow-highlight" />
       {selectedProjectId === null ? (<ProjectFilter handleTagClick={handleTagClick} handleClear={handleClear} selectedTags={selectedTags} />) : (<div className="h-6 my-4" aria-hidden="true" />)}
       <LayoutGroup>
   <motion.ul
@@ -64,7 +64,7 @@ const handleTagClick = (tag: string) => {
   </motion.ul>
 </LayoutGroup>
 
-      <Decoration type="thing" className="relative top-10 mx-auto w-full max-w-[480px] h-auto text-black" />
+      <Decoration type="thing" className="relative top-10 mx-auto w-full max-w-[480px] h-auto text-black drop-shadow-md drop-shadow-highlight" />
     </section>
   )
 }

@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Regn.nu (WIP)",
-    description: "Det finns inget dåligt väder, bara dåliga kläder. Regn.nu är en enkel sida för att visa var vädret är där du befinner dig just nu. Sidan använder sig av en väder-API för att hämta information om vädret och visar det på ett enkelt sätt. Talar om när det troligtvis kommer att börja regna eller snöa där du är. Sidan föreslår även kläder som passar vädret under dagen. Sidan är fortfarande under utveckling.",
+    description: "Det finns inget dåligt väder, bara dåliga kläder. Regn.nu är en enkel sida för att visa vad vädret är där du befinner dig just nu. Sidan använder sig av en väder-API för att hämta information om vädret och visar det på ett enkelt sätt. Talar om när det troligtvis kommer att börja regna eller snöa där du är. Sidan föreslår även kläder som passar vädret under dagen. Sidan är fortfarande under utveckling.",
     longDescription: "En viktig del av projektet är hanteringen av användarens position. Om webbläsaren tillåter geolocation används koordinaterna för att hämta väderinformation för användarens plats. Jag har även byggt stöd för att hitta närliggande orter när positionen inte är tillgänglig. Projektet har gett mig praktisk erfarenhet av TypeScript, API-integration, asynkron datahantering och att kombinera flera datakällor i ett användarvänligt gränssnitt. Jag utvecklar fortfarande projektet och förbättrar funktionaliteten löpande.",
     tags: ["TypeScript","SCSS", "API", "Geolocation", "Vite"],
     image: '/img/project1.webp',

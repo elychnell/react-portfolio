@@ -6,15 +6,18 @@ import { useCallback, useEffect, useRef, useState } from "react";
 function Ghost() {
 const ghostElementRef = useRef<HTMLElement | null>(null);
 
-const baseX = -35;
+const baseX = -8.75;
+const DEBUG_GHOST = true;
 
 const ghostRef = useCallback((element: HTMLElement | null) => {
   ghostElementRef.current = element;
 
   if (!element) return;
 
-  setGhostTop(GhostPosition(element));
+  setGhostTop(DEBUG_GHOST ? 120 : GhostPosition(element));
+  if (!DEBUG_GHOST) {
   setGhostReady(true);
+}
 }, []);
 
 const [ghostTop, setGhostTop] = useState<number>(() => GhostPosition());
@@ -40,7 +43,7 @@ function GhostPosition (element?: HTMLElement | null): number {
 
 function randomizeGhost() {
   setGhostTop(GhostPosition());
-  setXFloat(Math.floor(Math.random() * 21) - 10);
+  setXFloat(Math.random() * 5 - 2.5);
   setYFloat(Math.floor(Math.random() * 21) - 10);
   setDelay(Math.floor(Math.random() * 11) + 5);
 }
@@ -66,11 +69,12 @@ function checkProjectsOverlap() {
 }
  
   useEffect(() => {
+    if (DEBUG_GHOST) return;
     setGhostReady(true);
   }, []);
 
   useEffect(() => {
-  if (!ghostReady || isAnimating) return;
+  if (DEBUG_GHOST || !ghostReady || isAnimating) return;
   setTimeout(() => {
     randomizeGhost();
     setIsAnimating(true);
@@ -78,15 +82,20 @@ function checkProjectsOverlap() {
   }, [isAnimating, ghostReady]);
 
   return (
-    <motion.aside ref={ghostRef} style={{top: ghostTop}} initial={{  left: -425 }} animate={
-      isAnimating
-    ? { left: [-425, baseX + xFloat, baseX - xFloat, baseX + xFloat, baseX - xFloat, -425],
+    <motion.aside ref={ghostRef}
+    style={{top: ghostTop}}
+    initial={DEBUG_GHOST ? { x: 0 } : { x: "-110%" }}
+    animate={
+      DEBUG_GHOST
+    ? { x: 0, y: 0 }
+      : isAnimating
+    ? {  x: ["-110%", `${baseX + xFloat}%`, `${baseX - xFloat}%`, `${baseX + xFloat}%`, `${baseX - xFloat}%`, "-110%"],
         y: [0, yFloat, -yFloat, yFloat, -yFloat, 0]
      }
-    : { left: -425 }
+    : { x: "-110%"  }
     }
     onUpdate={checkProjectsOverlap}
-    transition={{ duration: 4.25 /*, repeat: Infinity, repeatType: "loop" */ }}
+    transition={{ duration: 4.25  }}
     onAnimationComplete={() => { setIsAnimating(false); }}
     className={`${styles.ghostAside} ${
   isOverProjects ? styles.ghostAsideLight : ""

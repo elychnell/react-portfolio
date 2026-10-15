@@ -23,7 +23,7 @@ function About() {
             gränssnitt där form och funktion arbetar tillsammans.
           </p>
 
-          <p className="mb-6 max-w-2xl text-base leading-7 text-primary">
+          <p className="mb-6 max-w-2xl text-base leading-7 text-primary text-shadow-2xs text-shadow-black-100">
             Under min utbildning arbetar jag med allt från semantisk HTML
             och responsiv CSS till React, TypeScript och API:er. Jag
             uppskattar problemlösning, rena komponenter och detaljer som
@@ -31,17 +31,17 @@ function About() {
           </p>
 
           <div className="flex flex-wrap gap-2">
-            <CatBubble name="HTML" />
-            <CatBubble name="CSS" />
-            <CatBubble name="JavaScript" />
-            <CatBubble name="TypeScript" />
-            <CatBubble name="React" />
-            <CatBubble name="Tailwind" />
-            <CatBubble name="SCSS" />
-            <CatBubble name="Git" />
-            <CatBubble name="API:er" />
-            <CatBubble name="Node.js" />
-            <CatBubble name="Express" />
+            <CatBubble name="HTML" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
+            <CatBubble name="CSS" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
+            <CatBubble name="JavaScript" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
+            <CatBubble name="TypeScript" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
+            <CatBubble name="React" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
+            <CatBubble name="Tailwind" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
+            <CatBubble name="SCSS" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
+            <CatBubble name="Git" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
+            <CatBubble name="API:er" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
+            <CatBubble name="Node.js" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
+            <CatBubble name="Express" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
           </div>
         </div>
       </div>

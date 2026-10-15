@@ -7,7 +7,7 @@ interface SocialLinksProps {
 
 function SocialLinks({ type, location }: SocialLinksProps) {
 
-const locationClass = location === "contact" ? "text-primary decoration-1 underline-offset-4 " : "text-white hover:text-highlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-highlight focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
+const locationClass = location === "contact" ? "text-primary decoration-1 underline-offset-4 " : "text-white text-shadow-xs text-shadow-black hover:text-highlight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-highlight focus-visible:ring-offset-2 focus-visible:ring-offset-dark"
   
   return (
     type === "email" ? (

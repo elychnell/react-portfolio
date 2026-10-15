@@ -1,6 +1,6 @@
 function Devcard() {
   return (
-    <div className="flex h-full w-full max-w-lg min-w-0 flex-col rounded-[1.35rem] border border-[#5364ed]/15 bg-[#fbfbfd] p-5 sm:p-7">
+    <div className="flex h-full w-full max-w-lg min-w-0 flex-col rounded-[1.35rem] border border-[#5364ed]/15 bg-[#fbfbfd] p-5 sm:p-7 order-first lg:order-none">
       <div className="flex gap-1.5">
         <span className="size-2.5 rounded-full bg-[#ff746c]"></span>
         <span className="size-2.5 rounded-full bg-[#ffce69]"></span>

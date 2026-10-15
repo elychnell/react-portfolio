@@ -18,7 +18,7 @@ function Contact() {
       <SocialLinks type="linkedin" location="contact" />
       </div>
       </div>
-      <Decoration type="arrow" className="mx-auto w-full max-w-[160px] md:max-w-[400px] h-auto text-primary rotate-90 px-4 md:rotate-0 pt-10 pb-10 md:pt-25" />
+      <Decoration type="arrow" className="mx-auto w-full max-w-[230px] md:max-w-[400px] h-auto text-primary rotate-90 px-4 md:rotate-0 pt-10 pb-10 md:pt-25" />
       <ContactForm />
       </div>
     </section>
