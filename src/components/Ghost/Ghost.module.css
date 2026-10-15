@@ -47,7 +47,7 @@ top: -4px;
 
 .date {
 position: relative;
-color: var(--color-light);
+color: var(--color-primary);
 
 text-shadow: 2px 2px 2px var(--color-dark);
 font-size: 0.75rem;
@@ -81,6 +81,10 @@ fill: var(--color-lighter)
   color: var(--color-highlight);
 }
 
+.ghostAsideLight .date {
+  color: var(--color-highlight);
+}
+
 .ghostAsideLight .outline,
 .ghostAsideLight .mouth,
 .ghostAsideLight .leftEye,
@@ -94,9 +98,7 @@ fill: var(--color-lighter)
   fill: var(--color-light);
 }
 
-.ghostAsideLight .date {
-  color: var(--color-dark);
-}
+
 
 /* SM: 640px och upp */
 @media (min-width: 40rem) {

@@ -12,7 +12,7 @@ function ProjectFilter({ handleTagClick, handleClear, selectedTags }: FilterProp
   const isTagSelected = (tag: string) => selectedTags.includes(tag)
 
   return (
-    <div className="bg-dark border border-primary shadow-highlight-400 shadow-2xl shadow-highlight rounded-2xl py-1 flex flex-row gap-1 flex-wrap my-2 lg:my-4 mx-auto max-w-[16em] lg:max-w-[90em] justify-center">
+    <div className="bg-dark border border-primary shadow-highlight-400 shadow-2xl shadow-highlight rounded-2xl py-1 flex flex-row gap-1 flex-wrap my-2 lg:my-4 mx-auto max-w-[16em] md:max-w-[40em] md:px-1 md:pb-2 lg:max-w-[90em] justify-center">
       {filterTags.map(tag => (
     <button
     key={tag}
@@ -24,8 +24,8 @@ function ProjectFilter({ handleTagClick, handleClear, selectedTags }: FilterProp
     focus-visible:ring-offset-dark
     ${
       isTagSelected(tag)
-        ? "bg-light border-highlight shadow-md shadow-green-500 text-white"
-        : "bg-dark border-primary shadow-md shadow-highlight text-highlight hover:bg-lighter hover:border-light hover:text-white"
+        ? "bg-light border-highlight shadow-md shadow-green-500 md:shadow-xs text-white"
+        : "bg-dark border-primary shadow-md md:shadow-xs shadow-highlight text-highlight hover:bg-lighter hover:border-light hover:text-white"
     }
     `}
     onClick={() => handleTagClick(tag)}
@@ -38,7 +38,7 @@ function ProjectFilter({ handleTagClick, handleClear, selectedTags }: FilterProp
   className="
     rounded-full border border-primary
     bg-dark text-highlight
-    shadow-md shadow-highlight
+    shadow-md shadow-highlight md:shadow-xs
     transition-colors duration-200
     hover:bg-lighter hover:border-light hover:text-white
     focus-visible:outline-none

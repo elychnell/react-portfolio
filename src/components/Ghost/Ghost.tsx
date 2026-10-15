@@ -7,7 +7,7 @@ function Ghost() {
 const ghostElementRef = useRef<HTMLElement | null>(null);
 
 const baseX = -8.75;
-const DEBUG_GHOST = true;
+const DEBUG_GHOST = false; // Set to true to keep the ghost in a fixed position for debugging
 
 const ghostRef = useCallback((element: HTMLElement | null) => {
   ghostElementRef.current = element;

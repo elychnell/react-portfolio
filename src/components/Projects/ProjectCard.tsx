@@ -75,7 +75,7 @@ const [xOffset, setXOffset] = useState(0);
       },
       }}
       className={`relative list-none w-full justify-self-center shadow-highlight shadow-2xl flex flex-col gap-2 pt-6 pb-4 pl-7 pr-8 bg-dark rounded-lg shadow-md ${
-      isExpanded ? "max-w-[285px] sm:max-w-md mb-40 mt-6 lg:max-w-3xl max-h-[1200px] min-h-[200px] sm:min-h-[600px] lg:min-h-[900px]" : "max-w-lg min-h-[470px] sm:min-h-[500px] lg:min-h-[670px]"
+      isExpanded ? "max-w-[285px] sm:max-w-md mb-40 mt-6 lg:max-w-3xl max-h-[1200px] min-h-[200px] sm:min-h-[600px]  lg:min-h-[900px]" : "max-w-lg min-h-[470px] sm:min-h-[500px] md:min-h-[652px] lg:min-h-[670px]"
       }`}
       >
       <div className="w-full flex gap-1 items-start">
