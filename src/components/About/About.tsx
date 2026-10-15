@@ -6,13 +6,13 @@ function About() {
       className="scroll-mt-16 py-16 md:py-32 lg:py-36 bg-highlight"
       id="about"
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 md:flex-row md:items-center md:gap-16 lg:gap-20">
+      <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:gap-8 lg:gap-12 px-6 md:flex-row md:items-center md:gap-16 lg:gap-20">
         <div className="md:flex-1">
-          <p className="mb-2 md:mb-4 text-base font-semibold tracking-wide text-primary">
+          <p className="text-base mb-1 sm:text-lg md:mb-4 font-semibold tracking-wide text-primary">
             01 / OM MIG
           </p>
 
-          <h2 className="md:mb-4 max-w-md text-4xl font-extrabold leading-tight text-blacknpm  md:text-6xl">
+          <h2 className="md:mb-4 max-w-md text-4xl sm:text-[2.8rem] font-extrabold leading-tight text-blacknpm  md:text-6xl">
             Nyfiken på hur bra idéer blir bra webb.
           </h2>
         </div>
@@ -30,7 +30,7 @@ function About() {
             gör en produkt enklare att använda.
           </p>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 xs:mx-auto sm:mx-auto sm:max-w-md lg:max-w-lg">
             <CatBubble name="HTML" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
             <CatBubble name="CSS" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />
             <CatBubble name="JavaScript" className="shadow-md shadow-primary border-[#151824]/12 bg-white" />

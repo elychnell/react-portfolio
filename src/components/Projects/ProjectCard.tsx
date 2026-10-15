@@ -75,11 +75,11 @@ const [xOffset, setXOffset] = useState(0);
       },
       }}
       className={`relative list-none w-full justify-self-center shadow-highlight shadow-2xl flex flex-col gap-2 pt-6 pb-4 pl-7 pr-8 bg-dark rounded-lg shadow-md ${
-      isExpanded ? "max-w-[285px] mb-40 mt-6 lg:max-w-3xl max-h-[1200px] min-h-[200px] lg:min-h-[900px]" : "max-w-lg min-h-[470px] lg:min-h-[670px]"
+      isExpanded ? "max-w-[285px] sm:max-w-md mb-40 mt-6 lg:max-w-3xl max-h-[1200px] min-h-[200px] sm:min-h-[600px] lg:min-h-[900px]" : "max-w-lg min-h-[470px] sm:min-h-[500px] lg:min-h-[670px]"
       }`}
       >
       <div className="w-full flex gap-1 items-start">
-      <img src={project.image} alt={project.title} className="h-64 lg:h-94 w-full rounded-lg border border-primary object-cover drop-shadow-md drop-shadow-primary" />
+      <img src={project.image} alt={project.title} className="h-64 sm:h-84 lg:h-94 w-full rounded-lg border border-primary object-cover drop-shadow-md drop-shadow-primary" />
       <button
       type="button"
       onClick={() => {
@@ -116,18 +116,18 @@ const [xOffset, setXOffset] = useState(0);
       </motion.div>
       )}
       </AnimatePresence>
-      <div className="mx-auto flex flex-row gap-2 max-w-xs flex-wrap justify-center">
+      <div className="mx-auto sm:mt-2 flex flex-row gap-2 max-w-xs flex-wrap justify-center">
         {project.tags.map(tag => (
           <CatBubble key={tag} name={tag} />
         ))}
       </div>
-      <div className="flex flex-row justify-center gap-1 lg:gap-6">
+      <div className="flex flex-row justify-center gap-1 mt-4 mb-4 lg:gap-6">
       <a href={project.repoUrl} target="_blank" aria-label="Link to GitHub repository" rel="noopener noreferrer" className="text-closeWhite text-shadow-md text-shadow-black flex flex-row gap-1 decoration-1 underline-offset-4 hover:underline">
       <Icon type="github" className="size-4 relative top-1 lg:size-6 lg:top-0" />  GitHub Repo
       </a>
       {project.liveUrl && (
         <a href={project.liveUrl} target="_blank" aria-label="Link to live site" rel="noopener noreferrer" className="text-base text-closeWhite text-shadow-md text-shadow-black ml-4 flex flex-row gap-1 decoration-1 underline-offset-4 hover:underline">
-         <Icon type="www" className="size-5 relative top-1 lg:size-6 lg:top-0" /> Live Site
+         <Icon type="www" className="size-5 relative top-0.5 left-0.5 lg:size-6 lg:top-0" /> Live Site
         </a>)}  
       </div>
     </motion.li>
