@@ -181,7 +181,7 @@ Eftersom Tailwind var nytt för mig började jag med desktop-layouten, vilket k�
 I efterhand tror jag att det som vanligt hade varit smidigare att börja med mobilversionen och sedan bygga vidare därifrån.
 
 Jag skulle också ha optimerat bilderna tidigare i projektet i stället för att upptäcka problemen först när jag körde Lighthouse.  
-Det hade varit bättre att bestämma lämpliga bildstorlekar redan från början.
+Det hade också varit bättre att bestämma lämpliga bildstorlekar redan från början.
 
 Med animationerna hade jag nog också vunnit på att ta en sak i taget. Jag försökte kombinera flera animationstyper ganska tidigt,  
 vilket gjorde det svårare att förstå vad som orsakade problemen. Det går att göra mycket med Motion, men det finns nog en poäng med att gå innan man springer.
@@ -189,7 +189,7 @@ vilket gjorde det svårare att förstå vad som orsakade problemen. Det går att
 ### ## Användning av AI-verktyg
 
 Figma AI användes för att ta fram ett första designkoncept utifrån en prompt. Verktyget genererade även en implementation med React  
-och Tailwind CSS, men den genererade koden användes inte direkt i projektet. `DevCard` och `CatBubble` komponenterna är inspirerad  
+och Tailwind CSS, men den genererade koden användes inte direkt i projektet. `DevCard` och `CatBubble` komponenterna är inspirerade  
 av det visuella konceptet från Figma-exemplet, men har anpassats till min egen design.
 
 ChatGPT användes som stöd vid felsökning och för att diskutera tekniska lösningar inom React, state-hantering och animationer.  
