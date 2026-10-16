@@ -6,9 +6,9 @@ function About() {
       className="scroll-mt-16 py-16 md:py-18 lg:py-36 bg-highlight"
       id="about"
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:gap-8 lg:gap-12 px-6 lg:flex-row lg:items-center md:gap-6 lg:gap-20">
+      <div className="mx-auto flex max-w-6xl flex-col gap-4 sm:gap-8 px-6 lg:flex-row lg:items-start md:gap-6 lg:gap-8">
         <div className="md:flex-1">
-          <p className="text-base mb-1 sm:text-lg md:mb-4 font-semibold tracking-wide text-primary">
+          <p className="text-base mb-1 sm:text-lg md:mb-4 lg:mb-0 lg:text-xl xl:text-2xl font-semibold tracking-wide text-primary">
             01 / OM MIG
           </p>
 

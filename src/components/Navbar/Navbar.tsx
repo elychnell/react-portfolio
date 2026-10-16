@@ -8,7 +8,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex items-center justify-between border-b border-primary bg-dark py-3 px-4 sm:px-8 lg:px-50">
+    <header className="fixed top-0 left-0 w-full z-1000 flex items-center justify-between border-b border-primary bg-dark py-3 px-4 sm:px-8 lg:px-10">
     <div className="flex items-center gap-2 text-white">
     <span className="flex size-8 items-center justify-center rounded-full bg-light text-xs font-bold">
     EL
@@ -81,7 +81,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
          text-shadow-md text-shadow-black
          focus-visible:outline-none focus-visible:ring-2
          focus-visible:ring-highlight focus-visible:ring-offset-2
-         focus-visible:ring-offset-dark"><span className="mt-0.5">Hem </span><Icon className="size-6 relative -top-0.25 drop-shadow-xl drop-shadow-highlight" type="home"/></a>
+         focus-visible:ring-offset-dark"><span className="mt-0.5">Hem </span><Icon className="size-6 relative -top-0.25" type="home"/></a>
       <a href="#about" className="flex flex-row gap-2 text-white
          hover:text-highlight transition-colors duration-200
          text-shadow-md text-shadow-black

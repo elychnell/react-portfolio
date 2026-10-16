@@ -39,8 +39,8 @@ export const projects: Project[] = [
     tags: ["TypeScript", "WebSockets", "Node.js", "Express", "PostgreSQL"],
     image: '/img/project3.webp',
     repoUrl: 'https://github.com/elychnell/keyboard-warrior',
-    liveUrl: 'Live länk kommer snart'
-    /* Render/Neon (WIP) */
+    liveUrl: ''
+    /* Live länk kommer snart på Render/Neon (WIP) */
   },
   {
   id: 5,

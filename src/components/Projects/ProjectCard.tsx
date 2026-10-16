@@ -75,11 +75,11 @@ const [xOffset, setXOffset] = useState(0);
       },
       }}
       className={`relative list-none w-full justify-self-center shadow-highlight shadow-2xl flex flex-col gap-2 pt-6 pb-4 pl-7 pr-8 bg-dark rounded-lg shadow-md ${
-      isExpanded ? "max-w-[285px] sm:max-w-md mb-40 mt-6 lg:max-w-3xl max-h-[1200px] min-h-[200px] sm:min-h-[600px]  lg:min-h-[900px]" : "max-w-lg min-h-[470px] sm:min-h-[500px] md:min-h-[652px] lg:min-h-[670px]"
+      isExpanded ? "max-w-[285px] sm:max-w-md mb-40 mt-6 lg:max-w-3xl max-h-[1200px] min-h-[200px] sm:min-h-[600px] lg:min-h-[900px]" : "max-w-lg min-h-[470px] sm:min-h-[500px] md:min-h-[652px] lg:min-h-[703px]"
       }`}
       >
       <div className="w-full flex gap-1 items-start">
-      <img src={project.image} alt={project.title} className="h-64 sm:h-84 lg:h-94 w-full rounded-lg border border-primary object-cover drop-shadow-md drop-shadow-primary" />
+      <img src={project.image} alt={project.title} className="h-64 sm:h-84 xl:h-94 w-full rounded-lg border border-primary object-cover drop-shadow-md drop-shadow-primary" />
       <button
       type="button"
       onClick={() => {
@@ -100,7 +100,7 @@ const [xOffset, setXOffset] = useState(0);
       </button>
       </div>
           
-      <h3 className={`text-closeWhite text-shadow-md text-shadow-black text-center font-bold ${isExpanded ? "text-md lg:text-xl" : "text-2xl"}`}>{project.title}</h3>
+      <h3 className={`text-closeWhite text-shadow-md text-shadow-black text-center font-bold ${isExpanded ? "text-base lg:text-lg xl:text-xl" : "text-2xl lg:text-[1.34rem]"}`}>{project.title}</h3>
       <p className={`text-whiteGreen text-shadow-md text-shadow-black ${isExpanded ? "text-sm" : "text-base line-clamp-4"}`}>{project.description}</p>
       <AnimatePresence initial={false}>
       {isExpanded && (

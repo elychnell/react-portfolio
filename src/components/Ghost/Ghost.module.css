@@ -3,7 +3,7 @@
   position: absolute;
   pointer-events: none;
   overflow-anchor: none;
-  z-index: 99999999;
+  z-index: 999;
   
   width: 250px;
   height: 100px;
@@ -31,7 +31,7 @@
 .line1 {
 position: relative;
 
-text-shadow: 2px 2px 1px var(--color-dark);
+text-shadow: 2px 1px 1px var(--color-dark);
 font-size: 1.25rem;
 top: 6px;
 }
@@ -39,17 +39,20 @@ top: 6px;
 .line2 {
 position: relative;
 
-text-shadow: 2px 2px 2px var(--color-dark);
+text-shadow: 2px 1px 1px var(--color-dark);
 font-size: 1.15rem;
 left: 1px;
 top: -4px;
 }
 
+.ghostText {
+  color: var(--color-primary);
+}
+
 .date {
 position: relative;
-color: var(--color-primary);
 
-text-shadow: 2px 2px 2px var(--color-dark);
+text-shadow: 2px 1px 1px var(--color-dark);
 font-size: 0.75rem;
 left: 3px;
 top: -10px;
@@ -58,10 +61,6 @@ top: -10px;
 /* GHOST ICON COLORS */
 .background {
 fill: transparent;
-}
-
-.ghostText {
-  color: var(--color-primary);
 }
 
 .outline, .mouth, .leftEye, .rightEye {
@@ -95,7 +94,7 @@ fill: var(--color-lighter)
 .ghostAsideLight .middleHighlight,
 .ghostAsideLight .restHighlight,
 .ghostAsideLight .leftHighlight {
-  fill: var(--color-light);
+  fill: var(--color-lighter);
 }
 
 
